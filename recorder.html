@@ -4,16 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<title>录音测试</title>
+<title>html5录音测试</title>
 
 </head>
 
 <body>
 <!--加载核心库，其他类型支持库在下面根据用户点击选择加载-->
 <script src="src/recorder.mp3.min.js"></script>
+<!-- <script src="src/recorder-core.js"></script> -->
 <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
 <!--加载可选扩展库-->
-<!-- <script src="src/extensions/waveview.js"></script> -->
+<!-- <script src="src/extensions/waveview.js"></script>  -->
 
 <style>
     body{
@@ -36,6 +37,7 @@
 </div>
 <audio class="recPlay" style="width:100%"></audio>
 <div class="reclog"></div>
+<div class="recinfo"></div>
 
 <script>
         function reclog(s){
@@ -47,7 +49,14 @@
 </script>
 
 <script>
+    /* rec = Recorder({
+        type:"mp3",
+        bitRate:16,
+        sampleRate:16000,
+        onProcess:null
+    }); */
     rec = Recorder();
+    rec.open();
     function recstart(){
 	    if(rec){
 		    rec.start();
@@ -118,16 +127,16 @@
 		    if(wav){
 			    logmsg("正在转码成wav...");
 			    wav(o.blob,function(blob){
-				    end(blob);
-				logmsg("已转码成wav播放");
-			},function(msg){
-				logmsg("转码成wav失败："+msg);
-			});
-		}else{
-			end(o.blob);
-		};
-	};
-};
+				       end(blob);
+				       logmsg("已转码成wav播放");
+			        },function(msg){
+				       logmsg("转码成wav失败："+msg);
+			        });
+		    }else{
+			   end(o.blob);
+		    };
+	    };
+    };
 </script>
 
 </body>
