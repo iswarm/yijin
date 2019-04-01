@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<title>录音测试</title>
+
+</head>
+
+<body>
+<!--加载核心库，其他类型支持库在下面根据用户点击选择加载-->
+<script src="src/recorder.mp3.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+<!--加载可选扩展库-->
+<!-- <script src="src/extensions/waveview.js"></script> -->
+
+<style>
+    body{
+        word-wrap: break-word;
+    }
+    pre{
+        white-space:pre-wrap;
+    }
+    .pd{
+        padding:0 0 6px 0;
+    }
+</style>
+
+<div class="pd">
+    <button onclick="recstart()">录制</button>
+    <button onclick="recstop()">停止</button>
+    
+    <button onclick="recpause()" style="margin-left:60px">暂停</button>
+    <button onclick="recresume()">继续</button>
+</div>
+<audio class="recPlay" style="width:100%"></audio>
+<div class="reclog"></div>
+
+<script>
+        function reclog(s){
+            $(".reclog").prepend('<div>['+new Date().toLocaleTimeString()+']'+s+'</div>');
+        };
+        $(window).bind("error",function(e){
+            reclog('<span style="color:red">【Error】:<pre>'+(e.error?e.error.stack:event.message)+'</pre></span>');
+        });
+</script>
+
+<script>
+    rec = Recorder();
+    function recstart(){
+	    if(rec){
+		    rec.start();
+		    reclog("录制中...");
+	    };
+    };
+
+    function recpause(){
+	    if(rec){
+		   rec.pause();
+		   reclog("已暂停");
+	    };
+    };
+
+    function recresume(){
+	    if(rec){
+		   rec.resume();
+		   reclog("继续录音中...");
+	    };
+    };
+
+    var recblob={};
+    function recstop(batCall){
+	    if(rec){
+		    if(!batCall){
+			    reclog("正在编码"+rec.set.type+"...");
+		    };
+		    var t1=Date.now();
+		    rec.stop(function(blob,time){
+			            var id=RandomKey(16);
+			            recblob[id]={blob:blob,set:$.extend({},rec.set),time:time};
+			            reclog('<button onclick="recplay(\''+id+'\')">播放</button>');
+			            batCall&&batCall();
+		            },function(s){
+			            reclog("失败："+s);
+			            batCall&&batCall();
+		            }
+                );
+	        };
+
+        function RandomKey(){
+	        return "randomkey"+(RandomKey.idx++);
+        };
+        RandomKey.idx=0;
+    };
+</script>
+
+</body>
+</html>
