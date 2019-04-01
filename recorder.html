@@ -70,6 +70,10 @@
     };
 
     var recblob={};
+    function RandomKey(){
+	    return "randomkey"+(RandomKey.idx++);
+    };
+    RandomKey.idx=0;
     function recstop(batCall){
 	    if(rec){
 		    if(!batCall){
@@ -86,13 +90,10 @@
 			            reclog("失败："+s);
 			            batCall&&batCall();
 		            }
-                );
-	        };
+            );
+	    };
 
-        function RandomKey(){
-	        return "randomkey"+(RandomKey.idx++);
-        };
-        RandomKey.idx=0;
+        
     };
 
     function recplay(key){
