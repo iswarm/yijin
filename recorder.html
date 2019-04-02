@@ -13,8 +13,20 @@
 <script src="src/recorder.mp3.min.js"></script>
 <!-- <script src="src/recorder-core.js"></script> -->
 <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://unpkg.com/ipfs/dist/index.min.js"></script>
 <!--加载可选扩展库-->
 <!-- <script src="src/extensions/waveview.js"></script>  -->
+
+<script type="text/javascript">
+    const node = new Ipfs({ repo: 'ipfs-' + Math.random() })
+    node.once('ready', () => {
+      console.log('Online status: ', node.isOnline() ? 'online' : 'offline')
+      document.getElementById("status").innerHTML= 'Node status: ' + (node.isOnline() ? 'online' : 'offline')
+      // You can write more code here to use it. Use methods like
+      // node.add, node.get. See the API docs here:
+      // https://github.com/ipfs/interface-ipfs-core
+    })
+</script>
 
 <style>
     body{
@@ -38,6 +50,29 @@
 <audio class="recPlay" style="width:100%"></audio>
 <div class="reclog"></div>
 <div class="recinfo"></div>
+
+<div><h1 id="status">Node status: offline</h1></div>
+
+<code style="display:block; white-space:pre-wrap; background-color:#d7d6d6">
+        const { Buffer } = Ipfs
+        node.add(new Buffer('Hello world!'), (err, filesAdded) => {
+          if (err) {
+            return console.error('Error - ipfs add', err, res)
+          }
+    
+          filesAdded.forEach((file) => console.log('successfully stored', file.hash))
+        })
+</code>
+
+<code style="display:block; white-space:pre-wrap; background-color:#d7d6d6">
+        node.cat('QmQzCQn4puG4qu8PVysxZmscmQ5vT1ZXpqo7f58Uh9QfyY', function (err, data) {
+          if (err) {
+            return console.error('Error - ipfs files cat', err, res)
+          }
+    
+          console.log(data.toString())
+        })
+</code>
 
 <script>
         function reclog(s){
