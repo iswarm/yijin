@@ -358,28 +358,92 @@ var uni$1 = uni;
 
 
 
+
+
 var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-icon.vue */ "E:\\翼进\\YiJin\\components\\uni-icon.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
 {
   data: function data() {
-    return {};
+    return {
+      name: '',
+      pwd: '' };
 
   },
   components: {
     uniIcon: _uniIcon.default },
 
   methods: {
-    login: function login() {//页面跳转时间
+    login: function login() {//登录
       uni.redirectTo({
         url: '../index/index' });
 
     },
-    register: function register() {
+    register: function register() {//注册
       uni.redirectTo({
         url: '../register/register' });
 
+    },
+    goLogin: function goLogin() {
+      if (this.name.length <= 0) {
+        uni.showToast({
+          icon: 'none',
+          title: "请输入用户名" });
+
+        return;
+      }
+      if (this.pwd.length <= 0) {
+        uni.showToast({
+          icon: 'none',
+          title: "请输入密码" });
+
+        return;
+      }
+      uni.request({
+        url: 'http://192.168.0.246:8080/user/login',
+        method: 'POST', //get或post
+        data: {
+          userName: this.name,
+          password: this.pwd },
+
+        success: function success(res) {
+          console.log(res.data);
+          uni.showToast({
+            icon: 'none',
+            title: '登录成功' });
+
+        },
+        fail: function fail() {
+          uni.hideLoading();
+          console.log("请求失败啊");
+        },
+        complete: function complete() {} });
+
+    },
+    WX_MP_getuserinfo: function WX_MP_getuserinfo(e) {
+      //微信小程序微信登录方法	
+      uni.login({
+        provider: 'weixin',
+        success: function success(loginRes) {
+          //登录成功
+          console.log("yes");
+          uni.getUserInfo({
+            success: function success(res) {
+              var userInfo = res.userInfo;
+              //获取用户名
+              console.log(userInfo.nickName);
+            } });
+
+
+          uni.redirectTo({ //页面跳转
+            url: '../register/register' });
+
+        },
+        fail: function fail() {
+
+        } });
+
     } },
 
-  onLoad: function onLoad() {
+  onLoad: function onLoad() {//第一次加载
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["default"]))
 
@@ -411,87 +475,141 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("view", [
-    _c("image", {
-      staticClass: "logo",
-      attrs: { src: "../../static/logo.png" }
-    }),
-    _c(
-      "view",
-      { staticClass: "login" },
-      [
-        _c(
-          "view",
-          { staticClass: "login-xy" },
-          [
-            _c("uni-icon", {
-              attrs: {
-                type: "person-filled",
-                size: "30",
-                color: "black",
-                mpcomid: "abb6ec54-0"
-              }
-            }),
-            _c("input", {
-              staticClass: "login-txt",
-              attrs: { placeholder: "用户名" }
-            })
-          ],
-          1
-        ),
-        _c("view", { staticClass: "line" }),
-        _c(
-          "view",
-          { staticClass: "login-xy" },
-          [
-            _c("uni-icon", {
-              attrs: {
-                type: "locked",
-                size: "28",
-                color: "black",
-                mpcomid: "abb6ec54-1"
-              }
-            }),
-            _c("input", {
-              staticClass: "login-txt",
-              attrs: { placeholder: "密   码", password: "" }
-            })
-          ],
-          1
-        ),
-        _c("view", { staticClass: "forgot-psd" }, [
-          _c("text", [_vm._v("忘记密码")]),
+  return _c(
+    "view",
+    [
+      _c("image", {
+        staticClass: "logo",
+        attrs: { src: "../../static/logo.png" }
+      }),
+      _c("open-data", {
+        attrs: { type: "userNickName", mpcomid: "abb6ec54-0" }
+      }),
+      _c(
+        "view",
+        { staticClass: "login" },
+        [
           _c(
-            "text",
+            "view",
+            { staticClass: "login-xy" },
+            [
+              _c("uni-icon", {
+                attrs: {
+                  type: "person-filled",
+                  size: "30",
+                  color: "black",
+                  mpcomid: "abb6ec54-1"
+                }
+              }),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.name,
+                    expression: "name"
+                  }
+                ],
+                staticClass: "login-txt",
+                attrs: { placeholder: "用户名", eventid: "abb6ec54-0" },
+                domProps: { value: _vm.name },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.name = $event.target.value
+                  }
+                }
+              })
+            ],
+            1
+          ),
+          _c("view", { staticClass: "line" }),
+          _c(
+            "view",
+            { staticClass: "login-xy" },
+            [
+              _c("uni-icon", {
+                attrs: {
+                  type: "locked",
+                  size: "28",
+                  color: "black",
+                  mpcomid: "abb6ec54-2"
+                }
+              }),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.pwd,
+                    expression: "pwd"
+                  }
+                ],
+                staticClass: "login-txt",
+                attrs: {
+                  placeholder: "密   码",
+                  password: "",
+                  eventid: "abb6ec54-1"
+                },
+                domProps: { value: _vm.pwd },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.pwd = $event.target.value
+                  }
+                }
+              })
+            ],
+            1
+          ),
+          _c("view", { staticClass: "forgot-psd" }, [
+            _c("text", [_vm._v("忘记密码")]),
+            _c(
+              "text",
+              {
+                staticStyle: { "padding-left": "10rpx" },
+                attrs: { eventid: "abb6ec54-2" },
+                on: {
+                  click: function($event) {
+                    _vm.register()
+                  }
+                }
+              },
+              [_vm._v("注册账号")]
+            )
+          ]),
+          _c(
+            "button",
             {
-              staticStyle: { "padding-left": "10rpx" },
-              attrs: { eventid: "abb6ec54-0" },
+              staticClass: "button",
+              attrs: { eventid: "abb6ec54-3" },
               on: {
-                click: function($event) {
-                  _vm.register()
+                tap: function($event) {
+                  _vm.goLogin()
                 }
               }
             },
-            [_vm._v("注册账号")]
+            [_vm._v("登录")]
+          ),
+          _c(
+            "button",
+            {
+              staticClass: "button",
+              attrs: { "open-type": "getUserInfo", eventid: "abb6ec54-4" },
+              on: { getuserinfo: _vm.WX_MP_getuserinfo }
+            },
+            [_vm._v("微信授权登录")]
           )
-        ]),
-        _c(
-          "button",
-          {
-            staticClass: "button",
-            attrs: { eventid: "abb6ec54-1" },
-            on: {
-              tap: function($event) {
-                _vm.login()
-              }
-            }
-          },
-          [_vm._v("登录")]
-        )
-      ],
-      1
-    )
-  ])
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

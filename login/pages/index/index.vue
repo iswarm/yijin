@@ -1,48 +1,37 @@
 <template>
-	<view class="content">
-       
-		<view>
-			<button @click="openCodeDialog">发送验证码</button>
-			<view>验证码为：{{code}}</view>
-        </view>
-		<lausirCodeDialog :show="showCodeDialog" :len="4" :autoCountdown="true" :phone="'139****7978'" v-on:change="change"></lausirCodeDialog>
+	<view>
+		 a= <input type="text" id="t1" v-model="t1">
+        b= <input type="text" id="t2" v-model="t2">
+        a+b=<span class="a">{{msg}}</span>
+        <input type="button" value="submit" @click="get()">
 	</view>
 </template>
 
 <script>
-	import lausirCodeDialog from '../../components/lausir-codedialog.vue';
 	export default {
 		components: {
-			lausirCodeDialog,
 		},
 		data() {
 			return {
-				showCodeDialog: false,
-				code:"1231"
-			}
+				t1:'',
+                t2:'',
+                msg:''
+				}
 		},
 		onLoad() {
-
 		},
 		methods: {
-			change:function(res){
-				if(res.type == 1){
-					this.code = res.code;
-					this.showCodeDialog = false;
-				}else if(res.type == -1){
-					this.code ="请输入验证码";
-					this.showCodeDialog = false;
-				}else{
-					setTimeout(function(){
-						res.resendCall()
-					},3000)
-				}
-				
-				
-			},
-			openCodeDialog:function(){
-				this.showCodeDialog = true;
-			}
+			get:function(){
+                    this.$http.get('http://192.168.0.246:8080/user/login',{
+                         a:this.t1,
+                         b:this.t2
+                    }).then(function(res){
+                       this.msg=res.data;
+                    },function(res){
+                        alert(res.status);
+                    });
+                }
+			
 		}
 	}
 </script>
