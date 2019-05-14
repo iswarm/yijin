@@ -1,0 +1,32 @@
+.vertical{
+	display: flex;/**flex布局*/
+	flex-direction: column;/**flex布局方向*/
+	justify-content: center;
+}
+.horizontal{
+	display: flex;
+	flex-direction: row;
+	border-bottom: solid #EEEEEE 1px;
+	width: 80%;
+	margin-left: 10%;
+	font-size: 30upx;
+	margin-bottom: 20upx;
+}
+.img{
+	height: 200upx;
+	width: 200upx;
+	margin-left: 37%;
+	margin-bottom: 50upx;
+	padding-top: 50upx;
+}
+.horizontal button{
+	background: blue;
+	color: white;
+	border-radius: 40upx;
+	height: 80upx;
+	line-height: 80upx;
+	font-size: 26upx;
+}
+.horizontal text{
+	font-size: 35upx;
+}

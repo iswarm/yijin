@@ -1,0 +1,136 @@
+
+.button-item.data-v-1e6c11fe:active {
+	background: #d4d4d4;
+}
+.button-item+.button-item.data-v-1e6c11fe {
+	border-left: 0.1px solid #d4d4d4;
+}
+.button-item.data-v-1e6c11fe {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	padding: 14px 0px;
+}
+.keyboard-line+.keyboard-line.data-v-1e6c11fe {
+	border-top: 0.1px solid #d4d4d4;
+}
+.keyboard-line.data-v-1e6c11fe {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.keyboard.data-v-1e6c11fe {
+	background: #fff;
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	font-size: 17px;
+}
+.dialog-close.data-v-1e6c11fe {
+	color: #999;
+	height: 20px;
+	width: 20px;
+	font-size: 15px;
+	top: 5px;
+	left: 5px;
+	position: absolute;
+}
+.dialog-close.data-v-1e6c11fe:before {
+	content: "\2716";
+}
+.countdown.data-v-1e6c11fe {
+	color: #666;
+	font-size: 16px;
+}
+.resend.data-v-1e6c11fe {
+	color: #007aff;
+	font-size: 16px;
+}
+.dialog-ft.data-v-1e6c11fe {
+	margin-top: 10px;
+}
+.code-view.data-v-1e6c11fe {
+	display: table;
+	text-align: center;
+	margin: 0 auto;
+	border-collapse: separate;
+	border-spacing: 10px 5px;
+}
+.code-item+.code-item.data-v-1e6c11fe {
+	margin-left: 5px;
+}
+.code-item.data-v-1e6c11fe {
+	display: table-cell;
+	border-bottom: 1px solid #999;
+	max-width: 35px;
+	min-width: 35px;
+	padding-bottom: 2px;
+	height: 30px;
+}
+.dialog-bd.data-v-1e6c11fe {
+	margin-top: 5px;
+}
+.codedialog-subtitle.data-v-1e6c11fe {
+	margin-top: 5px;
+	padding: 5px 0px;
+	font-size: 15px;
+	line-height: 1.4;
+	word-wrap: break-word;
+	word-break: break-all;
+	color: #999;
+}
+.dialog-view.data-v-1e6c11fe {
+	position: fixed;
+	z-index: 999;
+	width: 70%;
+	max-width: 300px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -120%);
+	    -ms-transform: translate(-50%, -120%);
+	        transform: translate(-50%, -120%);
+	background-color: #fff;
+	text-align: center;
+	border-radius: 3px;
+	overflow: hidden;
+	padding: 20px 10px;
+}
+.mask.data-v-1e6c11fe {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .6);
+}
+.codedialog.data-v-1e6c11fe {
+	z-index: 999;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+
+.content {
+		text-align: center;
+		height: 400rpx;
+}
+.logo{
+        height: 200rpx;
+        width: 200rpx;
+        margin-top: 200rpx;
+}
+.title {
+		font-size: 36rpx;
+		color: #8f8f94;
+}
+
