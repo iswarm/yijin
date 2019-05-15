@@ -30,3 +30,27 @@
 .horizontal text{
 	font-size: 35upx;
 }
+
+
+.inputArea {
+	padding: 20upx 10%;
+}
+
+.inputClass {
+	border: 2px solid #ccc;
+	border-radius: 22px;
+	outline: 0;
+	padding: 8px 15px;
+}
+.getCAPTCHA{
+	flex:1;
+	border-radius:0 22px 22px 0;
+	border-left: none;
+}
+.registerRole{
+	display: flex;
+	border: 2px solid #ccc;
+	border-radius: 22px;
+	outline: 0;
+	padding: 8px 15px;
+}

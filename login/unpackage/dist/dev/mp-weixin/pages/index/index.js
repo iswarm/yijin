@@ -8,7 +8,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
@@ -18,29 +18,19 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-icon.vue */ "E:\\翼进\\YiJin\\components\\uni-icon.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
 {
-  components: {},
-
   data: function data() {
-    return {
-      t1: '',
-      t2: '',
-      msg: '' };
+    return {};
 
   },
+  components: {
+    uniIcon: _uniIcon.default },
+
   onLoad: function onLoad() {
   },
-  methods: {
-    get: function get() {
-      this.$http.get('http://192.168.0.246:8080/user/login', {
-        a: this.t1,
-        b: this.t2 }).
-      then(function (res) {
-        this.msg = res.data;
-      }, function (res) {
-        alert(res.status);
-      });
-    } } };exports.default = _default;
+  methods: {} };exports.default = _default;
 
 /***/ }),
 
@@ -70,49 +60,15 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("view", [
-    _vm._v("a="),
-    _c("input", {
-      directives: [
-        { name: "model", rawName: "v-model", value: _vm.t1, expression: "t1" }
-      ],
-      attrs: { type: "text", id: "t1", eventid: "a8a2ec30-0" },
-      domProps: { value: _vm.t1 },
-      on: {
-        input: function($event) {
-          if ($event.target.composing) {
-            return
-          }
-          _vm.t1 = $event.target.value
-        }
-      }
-    }),
-    _vm._v("b="),
-    _c("input", {
-      directives: [
-        { name: "model", rawName: "v-model", value: _vm.t2, expression: "t2" }
-      ],
-      attrs: { type: "text", id: "t2", eventid: "a8a2ec30-1" },
-      domProps: { value: _vm.t2 },
-      on: {
-        input: function($event) {
-          if ($event.target.composing) {
-            return
-          }
-          _vm.t2 = $event.target.value
-        }
-      }
-    }),
-    _vm._v("a+b="),
-    _c("span", { staticClass: "a" }, [_vm._v(_vm._s(_vm.msg))]),
-    _c("input", {
-      attrs: { type: "button", value: "submit", eventid: "a8a2ec30-2" },
-      on: {
-        click: function($event) {
-          _vm.get()
-        }
-      }
-    })
+  return _c("view", { staticClass: "html" }, [
+    _c("view", { staticClass: "webpBack html" }, [
+      _c(
+        "view",
+        { staticClass: "body", attrs: { id: "print" } },
+        [_c("p", [_vm._v("lol")])],
+        1
+      )
+    ])
   ])
 }
 var staticRenderFns = []

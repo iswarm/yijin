@@ -13,11 +13,12 @@
 				<input placeholder="密   码" class="login-txt" password  v-model="pwd"/>
 			</view>
 			<view class="forgot-psd">
-				<text>忘记密码</text>
+				<text @click="test()">忘记密码</text>
 				<text style="padding-left: 10upx;" @click="register()">注册账号</text>
 			</view>
 			<button class="button" @tap="goLogin()">登录</button>
 			<button class="button" open-type="getUserInfo" @getuserinfo="WX_MP_getuserinfo">微信授权登录</button>
+			<button class="button" @tap="gettest()">get测试</button>
 		</view>
 	</view>
 </template>
@@ -28,7 +29,7 @@
 			data() {
 				return {
 					name:'',
-					pwd:''
+					pwd:'',
 				}
 			},
 			components: {
@@ -36,6 +37,11 @@
 			},
 			methods:{
 				login() {//登录
+				uni.redirectTo({
+					url: '../index/index'
+				})  
+				},
+				test() {//登录
 				uni.redirectTo({
 					url: '../index/index'
 				})  
@@ -61,24 +67,38 @@
 						return;
 					}
 					uni.request({
-						url: 'http://192.168.0.246:8080/user/login',
+						url: 'http://192.168.43.99:8080/user/login',//开发者服务器接口地址
 						method: 'POST',//get或post
-						data: {
+						data: {//请求的参数
 							userName:this.name,
 							password:this.pwd
 						},
 						success: res => {
+							//console.log(this.name)
 							console.log(res.data)
-							uni.showToast({
+							uni.showToast({//交互反馈接口，显示消息提示框。
 								icon:'none',
 								title:'登录成功'
 							})
 						},
 						fail: () => {
-							uni.hideLoading();
-							console.log("请求失败啊")
+							uni.hideLoading();//隐藏 loading 提示框。
+							console.log("请求失败")
+							//console.log(this.name)
 						},
 						complete: () => {}
+					});
+				},
+				gettest(){
+					uni.request({
+						url:'http://192.168.43.99:8080/student/chapter/1',
+						method:'GET',
+						success:res=>{
+							console.log(res.data.data)
+							},
+						fail:()=>{
+							console.log("请求失败")
+							}
 					});
 				},
 				WX_MP_getuserinfo(e){
@@ -87,26 +107,29 @@
 					provider: 'weixin',
 					success: function (loginRes) {
 					//登录成功
-					console.log("yes")
 					uni.getUserInfo({
 						success: function (res){
 							const userInfo = res.userInfo
-							//获取用户名
-							console.log(userInfo.nickName)
-						}
+							const nickName= userInfo.nickName//读取头像
+							const avatarUrl= userInfo.avatarUrl
+							uni.setStorageSync('wxname', nickName)//缓存
+							uni.setStorageSync('wximg', avatarUrl)
 							
+						}	
 					});
-					uni.redirectTo({//页面跳转
+					uni.redirectTo({//登录成功页面跳转
 						url:'../register/register'
 					})
 						},
-						fail:function(){
-							
+						fail:function(){	
 						}
 					});
 				}
 			},
 			onLoad(){//第一次加载
+			},
+			beforeUpdate(){//数据更新时调用此生命周期函数
+				this.wx.setname(this.test)
 			},
 		}
 	</script>
