@@ -7,18 +7,28 @@
 				<uni-icon type="person-filled" size="30" color="black"></uni-icon>
 				<input  placeholder="用户名" class="login-txt" v-model="name"/>
 			</view>
-			<view class="line"></view>
 			<view class="login-xy">
 				<uni-icon type="locked" size="28" color="black"></uni-icon>
-				<input placeholder="密   码" class="login-txt" password  v-model="pwd"/>
-			</view>
-			<view class="forgot-psd">
-				<text @click="test()">忘记密码</text>
-				<text style="padding-left: 10upx;" @click="register()">注册账号</text>
+				<input placeholder="密码" class="login-txt" password  v-model="pwd" style="letter-spacing:15px;"/>
 			</view>
 			<button class="button" @tap="goLogin()">登录</button>
+			<view class="forgot-psd">
+				<text @click="test()">忘记密码</text>
+				<text class="forgot-psd-spacing">|</text>
+				<text @click="register()">注册账号</text>
+			</view>
+			<view class="bottom">
+				<view>第三方登录</view>
+				<view class="login-icon">
+					<uni-icon type="weibo" size="20" color="black"></uni-icon>
+					<uni-icon type="weixin" size="20" color="black"></uni-icon>
+					<uni-icon type="qq" size="20" color="black"></uni-icon>
+				</view> 
+			</view>
+			<!--
 			<button class="button" open-type="getUserInfo" @getuserinfo="WX_MP_getuserinfo">微信授权登录</button>
 			<button class="button" @tap="gettest()">get测试</button>
+			-->
 		</view>
 	</view>
 </template>
@@ -90,16 +100,9 @@
 					});
 				},
 				gettest(){
-					uni.request({
-						url:'http://192.168.43.99:8080/student/chapter/1',
-						method:'GET',
-						success:res=>{
-							console.log(res.data.data)
-							},
-						fail:()=>{
-							console.log("请求失败")
-							}
-					});
+					uni.redirectTo({//登录成功页面跳转
+						url:'../222/222'
+					})
 				},
 				WX_MP_getuserinfo(e){
 					//微信小程序微信登录方法	

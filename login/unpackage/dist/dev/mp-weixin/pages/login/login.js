@@ -34,6 +34,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-icon.vue */ "E:\\翼进\\YiJin\\components\\uni-icon.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
 {
   data: function data() {
@@ -100,15 +110,8 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
 
     },
     gettest: function gettest() {
-      uni.request({
-        url: 'http://192.168.43.99:8080/student/chapter/1',
-        method: 'GET',
-        success: function success(res) {
-          console.log(res.data.data);
-        },
-        fail: function fail() {
-          console.log("请求失败");
-        } });
+      uni.redirectTo({ //登录成功页面跳转
+        url: '../222/222' });
 
     },
     WX_MP_getuserinfo: function WX_MP_getuserinfo(e) {
@@ -221,7 +224,6 @@ var render = function() {
             ],
             1
           ),
-          _c("view", { staticClass: "line" }),
           _c(
             "view",
             { staticClass: "login-xy" },
@@ -244,8 +246,9 @@ var render = function() {
                   }
                 ],
                 staticClass: "login-txt",
+                staticStyle: { "letter-spacing": "15px" },
                 attrs: {
-                  placeholder: "密   码",
+                  placeholder: "密码",
                   password: "",
                   eventid: "abb6ec54-1"
                 },
@@ -262,11 +265,24 @@ var render = function() {
             ],
             1
           ),
+          _c(
+            "button",
+            {
+              staticClass: "button",
+              attrs: { eventid: "abb6ec54-2" },
+              on: {
+                tap: function($event) {
+                  _vm.goLogin()
+                }
+              }
+            },
+            [_vm._v("登录")]
+          ),
           _c("view", { staticClass: "forgot-psd" }, [
             _c(
               "text",
               {
-                attrs: { eventid: "abb6ec54-2" },
+                attrs: { eventid: "abb6ec54-3" },
                 on: {
                   click: function($event) {
                     _vm.test()
@@ -275,11 +291,11 @@ var render = function() {
               },
               [_vm._v("忘记密码")]
             ),
+            _c("text", { staticClass: "forgot-psd-spacing" }, [_vm._v("|")]),
             _c(
               "text",
               {
-                staticStyle: { "padding-left": "10rpx" },
-                attrs: { eventid: "abb6ec54-3" },
+                attrs: { eventid: "abb6ec54-4" },
                 on: {
                   click: function($event) {
                     _vm.register()
@@ -289,41 +305,40 @@ var render = function() {
               [_vm._v("注册账号")]
             )
           ]),
-          _c(
-            "button",
-            {
-              staticClass: "button",
-              attrs: { eventid: "abb6ec54-4" },
-              on: {
-                tap: function($event) {
-                  _vm.goLogin()
-                }
-              }
-            },
-            [_vm._v("登录")]
-          ),
-          _c(
-            "button",
-            {
-              staticClass: "button",
-              attrs: { "open-type": "getUserInfo", eventid: "abb6ec54-5" },
-              on: { getuserinfo: _vm.WX_MP_getuserinfo }
-            },
-            [_vm._v("微信授权登录")]
-          ),
-          _c(
-            "button",
-            {
-              staticClass: "button",
-              attrs: { eventid: "abb6ec54-6" },
-              on: {
-                tap: function($event) {
-                  _vm.gettest()
-                }
-              }
-            },
-            [_vm._v("get测试")]
-          )
+          _c("view", { staticClass: "bottom" }, [
+            _c("view", [_vm._v("第三方登录")]),
+            _c(
+              "view",
+              { staticClass: "login-icon" },
+              [
+                _c("uni-icon", {
+                  attrs: {
+                    type: "weibo",
+                    size: "20",
+                    color: "black",
+                    mpcomid: "abb6ec54-3"
+                  }
+                }),
+                _c("uni-icon", {
+                  attrs: {
+                    type: "weixin",
+                    size: "20",
+                    color: "black",
+                    mpcomid: "abb6ec54-4"
+                  }
+                }),
+                _c("uni-icon", {
+                  attrs: {
+                    type: "qq",
+                    size: "20",
+                    color: "black",
+                    mpcomid: "abb6ec54-5"
+                  }
+                })
+              ],
+              1
+            )
+          ])
         ],
         1
       )

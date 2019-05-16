@@ -1,0 +1,1 @@
+<template name="ea509b30"><view class="_view ea509b30"><web-view src="../../hybrid/html/tt.html" bindmessage="handleProxy" data-eventid="{{'ea509b30-0'}}" data-comkey="{{$k}}" class="_web-view ea509b30"></web-view></view></template>

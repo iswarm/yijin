@@ -8,7 +8,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
 
 
 
@@ -17,16 +17,13 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-
-
-var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-icon.vue */ "E:\\翼进\\YiJin\\components\\uni-icon.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
 {
   data: function data() {
     return {};
 
   },
-  components: {
-    uniIcon: _uniIcon.default },
+  components: {},
+
 
   onLoad: function onLoad() {
   },
@@ -60,18 +57,16 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("view", { staticClass: "html" }, [
-    _c("view", { staticClass: "webpBack html" }, [
-      _c(
-        "view",
-        { staticClass: "body", attrs: { id: "print" } },
-        [_c("p", [_vm._v("lol")])],
-        1
-      )
-    ])
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("view", [_c("view", { staticClass: "screen" }, [_vm._v("te")])])
+  }
+]
 render._withStripped = true
 
 

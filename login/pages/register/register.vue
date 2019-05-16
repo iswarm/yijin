@@ -148,7 +148,7 @@
 					headers['cookie'] = 'PHPSESSID=' + PHPSESSID;//将PHPSESSID放入请求头中,如你有其他cookies都可以缀后面，分号分割。浏览器端本身就有cookies机制，不设置
 				}
 				uni.request({
-					url: this.$url + '/api/login/register.php',
+					url: this.$url + '',
 					method: 'POST',
 					header: headers,
 					data: {
@@ -190,7 +190,7 @@
 			},
 			openAgreement() {//用户协议
 				uni.navigateTo({
-					url: '',
+					url: '../../store/new_file.html',
 					success: res => {},
 					fail: () => {},
 					complete: () => {}

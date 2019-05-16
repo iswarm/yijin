@@ -8,38 +8,65 @@
 	width:100%;
 	height:100%;
 	background-size: contain;
-	position: flex;/**设置定位类型*/
-	z-index:3000 ;
 	display: flex;/**flex布局*/
 	flex-direction: column;/**flex布局方向*/
 	margin-top: 80upx;
 }
 .login-xy{
+	width:60%;
+	background: cornflowerblue;
+	margin-left: 15%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;/**flex布局控件位置居中*/
 	margin-bottom: 20upx;
 	margin-top: 20upx;
+	border: 0px;
+	border-radius: 22px;
+	outline: 0;
+	padding: 8px 15px;
 }
 .login-txt{
 	color: #333333;
 	font-size: 35upx;
-}
-.line{
-	width:70%;
-	height:1px;
-	border-top:solid black 1px;
-	margin-left: 15%;
+	border-left:2px solid #BDBDBD;
 }
 .forgot-psd{
 	color: black;
-	width: 80%;
-	text-align: right;
+	text-align: left; 
 	margin-bottom: 30upx;
+	margin-left: 25%;
+	margin-top: 30upx;
 }
-
+.forgot-psd-spacing{
+	font-weight: bold;
+	margin-left: 10%;
+	margin-right: 10%;
+}
 .button{
-	width: 60%;
+	width: 70%;
+	border-radius: 45upx;
+	background: cornflowerblue;
+	border: 0px;
+	color: white;
+	letter-spacing:8px;
+	margin-top: 20upx;
+}
+.bottom{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	bottom: 50upx;
+	margin-left: 25%;
+	text-align: center;
+}
+.login-icon{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;/**flex布局控件位置居中*/
+	letter-spacing:40px;
+	margin-left: 10%;
 }
 
 
