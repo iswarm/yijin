@@ -30,7 +30,7 @@ var getChapters = (cid,callback)=>{
 		callback(result);
 	});
 }
-
+//获取小节的方法
 var getNodes =(chapterId,callback)=>{
 	courseDao.selNodeByChapterId(chapterId,(nodes)=>{
 		var result={};
@@ -38,7 +38,7 @@ var getNodes =(chapterId,callback)=>{
 			console.log();
 		}else{
 			result={
-				nodes:nodes,
+			nodes:nodes,
 			}
 		}
 		callback(result);

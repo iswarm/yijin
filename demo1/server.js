@@ -53,5 +53,28 @@ server.get("/node/:chapterid",(req,res)=>{
 		res.status(200).send(result).end();
 	});
 });
-//static数据
+
+//上传录制视频
+server.get("/upload/:user_id/:code",(req,res)=>{
+	var code = req.params.code;
+	var user_id = req.params.user_id;
+	userService.upload(user_id,code,(result)=>{
+		res.status(200).send(result).end();
+	});
+});
+//获取上传
+server.get("/getVideo/:user_id",(req,res)=>{
+	var user_id = req.params.user_id;
+	userService.getVideo(user_id,(result)=>{
+		res.status(200).send(result).end();
+	});
+});
+//检查用户名是否存在
+server.get("/checkusername/:username",(req,res)=>{
+	var username = req.params.username;
+	userService.checkusername(username,(result)=>{
+		res.status(200).send(result).end();
+	});
+});
+//static数据1
 server.use(static("./static"));

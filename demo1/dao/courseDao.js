@@ -38,6 +38,7 @@ var selChapterBycid=(cid,callback)=>{
 		callback(chapters);
 	});
 }
+//根据章节id查询小节信息
 var selNodeByChapterId=(chapterId,callback)=>{
 	var nodes=[];
 	var sql = "select * from t_node where chapterId=?";
