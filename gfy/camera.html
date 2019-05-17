@@ -1,0 +1,62 @@
+
+<style>
+    html, body {
+        margin: 0!important;
+        padding: 0!important;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 1em;
+    }
+    video {
+        width: 30%;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+</style>
+<button id="btn-start-recording">Start Recording</button>
+<button id="btn-stop-recording" disabled>Stop Recording</button>
+<hr>
+<video controls autoplay playsinline></video>
+<script src="https://www.webrtc-experiment.com/RecordRTC.js"></script>
+<script src="https://www.webrtc-experiment.com/common.js"></script>
+<script>
+    var video = document.querySelector('video');
+    function captureCamera(callback) {
+        navigator.mediaDevices.getUserMedia({ audio: true, video: true }).then(function(camera) {
+            callback(camera);          //获取媒体设备
+        }).catch(function(error) {
+            alert('Unable to capture your camera. Please check console logs.');
+            console.error(error);
+        });
+    }
+    function stopRecordingCallback() {
+        video.src = video.srcObject = null;
+        video.muted = false;  //静音与否
+        video.volume = 1;     //音量
+        video.src = URL.createObjectURL(recorder.getBlob());
+
+        recorder.camera.stop();
+        recorder.destroy();
+        recorder = null;
+    }
+    var recorder;
+    document.getElementById('btn-start-recording').onclick = function() {
+        this.disabled = true;
+        captureCamera(function(camera) {
+            video.muted = true;
+            video.volume = 1;
+            video.srcObject = camera;
+            recorder = RecordRTC(camera, {
+                type: 'video'
+            });   //打开摄像头，录制视频
+            recorder.startRecording(); //开始录制
+            recorder.camera = camera;  //停止录制时释放摄像头
+            document.getElementById('btn-stop-recording').disabled = false;
+        });
+    };
+    document.getElementById('btn-stop-recording').onclick = function() {
+        this.disabled = true;
+        recorder.stopRecording(stopRecordingCallback);  //停止录制
+    };
+</script>
+
