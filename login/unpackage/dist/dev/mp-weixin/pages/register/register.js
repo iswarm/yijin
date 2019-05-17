@@ -8,7 +8,20 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -41,18 +54,159 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
 {
   data: function data() {
     return {
-      array: ['学生', '老师', '管理员', '角色x'],
-      index: 0 };
+      array: ['学生', '老师', '管理员', '角色x'], //注册角色
+      index: 0,
+      registerPhone: '',
+      registerName: '',
+      registerPassword: '',
+      confirmPassword: '',
+      registerCode: '',
+      smsbtn: { //发送验证码按钮状态
+        text: '发送',
+        status: false,
+        codeTime: 60 },
+
+      timerId: null,
+      message: '' };
 
   },
   components: {
     uniIcon: _uniIcon.default },
 
+  onLoad: function onLoad() {
+  },
   methods: {
-    bindPickerChange: function bindPickerChange(e) {
+    bindPickerChange: function bindPickerChange(e) {//角色选择
       console.log('picker发送选择改变，携带值为：' + e.target.value);
       this.index = e.target.value;
+    },
+    getsmscode: function getsmscode() {var _this = this;
+      //发送验证码函数
+      if (this.smsbtn.codeTime != 60) {
+        return;
+      }
+      this.timerId = setInterval(function () {//发送验证码的定时器
+        var codeTime = _this.smsbtn.codeTime;
+        codeTime--;
+        _this.smsbtn.codeTime = codeTime;
+        _this.smsbtn.text = codeTime + "S";
+        if (codeTime < 1) {
+          clearInterval(_this.timerId);
+          _this.smsbtn.text = "重试";
+          _this.smsbtn.codeTime = 60;
+          _this.smsbtn.status = false;
+        }
+      },
+      1000);
+      return false;
+    },
+    goRegister: function goRegister() {var _this2 = this; //注册函数
+      var registerPhone = this.registerPhone;
+      var registerName = this.registerName;
+      var registerPassword = this.registerPassword;
+      var confirmPassword = this.confirmPassword;
+      var registerCode = this.registerCode;
+      if (!/^1(3|4|5|6|7|8|9)\d{9}$/.test(registerPhone)) {
+        this.message = "手机号码有误，请重填";
+        return false;
+      }
+      if (registerCode < 100000) {
+        this.message = "验证码不符合格式";
+        return false;
+      }
+      if (!registerName) {
+        this.message = "用户名为空";
+        return false;
+      }
+      if (!registerPassword) {
+        this.message = "密码为空";
+        return false;
+      }
+      var ls = 0;
+      if (registerPassword.match(/([a-z])+/)) {
+        ls++;
+      }
+      if (registerPassword.match(/([0-9])+/)) {
+        ls++;
+      }
+      if (registerPassword.match(/([A-Z])+/)) {
+        ls++;
+      }
+      if (registerPassword.match(/[^a-zA-Z0-9]+/)) {
+        ls++;
+      }
+      if (registerPassword.length < 8) {
+        ls = 0;
+      }
+      if (ls < 2) {
+        this.message = "密码强度不够，至少8位，大写、小写、字母、符号 其中两种";
+        return false;
+      }
+      if (confirmPassword != registerPassword) {
+        this.message = "两次密码不同";
+        return false;
+      }
+      uni.showLoading({
+        title: '加载中。。。',
+        mask: false });
+
+
+      var headers = {};
+      headers['content-type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
+      var PHPSESSID = uni.getStorageSync('PHPSESSID');
+      if (PHPSESSID) {
+        headers['cookie'] = 'PHPSESSID=' + PHPSESSID; //将PHPSESSID放入请求头中,如你有其他cookies都可以缀后面，分号分割。浏览器端本身就有cookies机制，不设置
+      }
+      uni.request({
+        url: this.$url + '',
+        method: 'POST',
+        header: headers,
+        data: {
+          phone: this.registerPhone, //phone应该以后台验证码接收到的为phone，否则会造成修改后任意手机号注册漏洞
+          pw: this.registerPassword,
+          code: this.registerCode //验证码
+        },
+        success: function success(res) {
+          console.log(res);
+          var cookies = res.cookies;
+          if (cookies) {
+            for (var i = 0; i < cookies.length; i++) {
+              if (cookies[i].name == 'PHPSESSID') {//PHPSESSID从cookies取出，放入本地储存
+                uni.setStorageSync('PHPSESSID', cookies[i].value);
+                break;
+              }
+            }
+          }
+          //返回的基本信息做本地缓存
+          var data = res.data;
+          if (data.ec === 0) {
+            uni.setStorageSync('userinfo', data.user);
+            uni.hideLoading();
+            uni.reLaunch({
+              url: '../index/indexme' });
+
+          } else {
+            uni.removeStorageSync('userinfo');
+            _this2.message = data.msg;
+            uni.hideLoading();
+          }
+        },
+        fail: function fail() {
+          uni.hideLoading();
+          _this2.message = "网络连接失败";
+        },
+        complete: function complete() {} });
+
+    },
+    openAgreement: function openAgreement() {//用户协议
+      uni.navigateTo({
+        url: '../../store/new_file.html',
+        success: function success(res) {},
+        fail: function fail() {},
+        complete: function complete() {} });
+
     } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["default"]))
 
 /***/ }),
 
@@ -82,90 +236,212 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("view", { staticClass: "vertical" }, [
-    _c("image", {
-      staticClass: "img",
-      attrs: { src: "../../static/logo.png" }
-    }),
+  return _c("view", [
+    _c("view", { staticClass: "inputArea" }, [
+      _c(
+        "view",
+        { staticClass: "registerRole" },
+        [
+          _c("text", { staticStyle: { "margin-right": "20rpx" } }, [
+            _vm._v("选择注册的角色")
+          ]),
+          _c(
+            "picker",
+            {
+              attrs: {
+                value: _vm.index,
+                range: _vm.array,
+                eventid: "cd81f23c-0"
+              },
+              on: { change: _vm.bindPickerChange }
+            },
+            [_c("text", [_vm._v(_vm._s(_vm.array[_vm.index]))])]
+          )
+        ],
+        1
+      )
+    ]),
+    _c("view", { staticClass: "inputArea" }, [
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.registerPhone,
+            expression: "registerPhone"
+          }
+        ],
+        staticClass: "inputClass",
+        attrs: {
+          placeholder: "请输入手机号(国内)",
+          type: "number",
+          maxlength: "11",
+          eventid: "cd81f23c-1"
+        },
+        domProps: { value: _vm.registerPhone },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.registerPhone = $event.target.value
+          }
+        }
+      })
+    ]),
+    _c("view", { staticClass: "inputArea" }, [
+      _c("view", { staticStyle: { display: "flex" } }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.registerCode,
+              expression: "registerCode"
+            }
+          ],
+          staticClass: "inputClass",
+          staticStyle: { flex: "4", "border-radius": "22px 0 0 22px" },
+          attrs: {
+            type: "number",
+            maxlength: "6",
+            placeholder: "短信验证码",
+            eventid: "cd81f23c-2"
+          },
+          domProps: { value: _vm.registerCode },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.registerCode = $event.target.value
+            }
+          }
+        }),
+        _c(
+          "view",
+          {
+            staticClass: "inputClass getCAPTCHA",
+            attrs: { eventid: "cd81f23c-3" },
+            on: { click: _vm.getsmscode }
+          },
+          [_vm._v(_vm._s(_vm.smsbtn.text))]
+        )
+      ])
+    ]),
+    _c("view", { staticClass: "inputArea" }, [
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.registerName,
+            expression: "registerName"
+          }
+        ],
+        staticClass: "inputClass",
+        attrs: {
+          placeholder: "输入用户名",
+          type: "text",
+          eventid: "cd81f23c-4"
+        },
+        domProps: { value: _vm.registerName },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.registerName = $event.target.value
+          }
+        }
+      })
+    ]),
+    _c("view", { staticClass: "inputArea" }, [
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.registerPassword,
+            expression: "registerPassword"
+          }
+        ],
+        staticClass: "inputClass",
+        attrs: {
+          placeholder: "密码(至少符号数字大小写两种)",
+          type: "password",
+          eventid: "cd81f23c-5"
+        },
+        domProps: { value: _vm.registerPassword },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.registerPassword = $event.target.value
+          }
+        }
+      })
+    ]),
+    _c("view", { staticClass: "inputArea" }, [
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.confirmPassword,
+            expression: "confirmPassword"
+          }
+        ],
+        staticClass: "inputClass",
+        attrs: {
+          placeholder: "确认登录密码",
+          type: "password",
+          eventid: "cd81f23c-6"
+        },
+        domProps: { value: _vm.confirmPassword },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.confirmPassword = $event.target.value
+          }
+        }
+      })
+    ]),
+    _c("view", { staticStyle: { padding: "0 10%" } }, [
+      _c("text", { staticStyle: { color: "red" } }, [
+        _vm._v(_vm._s(_vm.message))
+      ])
+    ]),
     _c(
       "view",
-      { staticClass: "horizontal" },
+      { staticClass: "inputArea" },
       [
-        _c("text", { staticStyle: { "margin-right": "20rpx" } }, [
-          _vm._v("选择注册的角色")
-        ]),
         _c(
-          "picker",
+          "button",
           {
-            attrs: {
-              value: _vm.index,
-              range: _vm.array,
-              eventid: "cd81f23c-0"
-            },
-            on: { change: _vm.bindPickerChange }
+            staticStyle: { "border-radius": "22px" },
+            attrs: { type: "primary", eventid: "cd81f23c-7" },
+            on: { click: _vm.goRegister }
           },
-          [_c("text", [_vm._v(_vm._s(_vm.array[_vm.index]))])]
+          [_vm._v("注 册")]
         )
       ],
       1
     ),
-    _c(
-      "view",
-      { staticClass: "horizontal" },
-      [
-        _c("uni-icon", {
-          attrs: {
-            type: "person-filled",
-            size: "30",
-            color: "black",
-            mpcomid: "cd81f23c-0"
-          }
-        }),
-        _c("input", { attrs: { placeholder: "输入用户名" } })
-      ],
-      1
-    ),
-    _c(
-      "view",
-      { staticClass: "horizontal" },
-      [
-        _c("uni-icon", {
-          attrs: {
-            type: "locked",
-            size: "30",
-            color: "black",
-            mpcomid: "cd81f23c-1"
-          }
-        }),
-        _c("input", { attrs: { placeholder: "输入密码" } })
-      ],
-      1
-    ),
-    _c(
-      "view",
-      { staticClass: "horizontal" },
-      [
-        _c("uni-icon", {
-          attrs: {
-            type: "phone",
-            size: "30",
-            color: "black",
-            mpcomid: "cd81f23c-2"
-          }
-        }),
-        _c("input", { attrs: { placeholder: "手机号码" } })
-      ],
-      1
-    ),
-    _c(
-      "view",
-      { staticClass: "horizontal" },
-      [
-        _c("input", { attrs: { placeholder: "输入验证码" } }),
-        _c("button", [_vm._v("获取验证码")])
-      ],
-      1
-    )
+    _c("view", { staticClass: "inputArea" }, [
+      _c(
+        "text",
+        {
+          staticStyle: { float: "right", color: "blue" },
+          attrs: { eventid: "cd81f23c-8" },
+          on: { click: _vm.openAgreement }
+        },
+        [_vm._v("《用户协议》")]
+      )
+    ])
   ])
 }
 var staticRenderFns = []

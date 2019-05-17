@@ -118,10 +118,12 @@ var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "E:\\翼进\\
 
 _vue.default.config.productionTip = false;
 
+
 _App.default.mpType = 'app';
 
 var app = new _vue.default(_objectSpread({},
 _App.default));
+
 
 app.$mount();
 
