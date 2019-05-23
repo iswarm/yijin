@@ -21,7 +21,6 @@ var selUserByUserName = (username,callback)=>{
 			user=[];
 		}
 		else{
-
 			user= data;
 		}
 		
@@ -29,9 +28,9 @@ var selUserByUserName = (username,callback)=>{
 	});
 }
 //添加用户
-var insUser = (uid,username,password,phone,rid,callback)=>{
-	var sql = "insert into t_user(id,username,password,phone) values(?,?,?,?);insert into t_user_role(user_id,role_id) values(?,?)";
-	var params = [uid,username,password,phone,uid,rid]
+var insUser = (user_id,username,password,email,rolename,callback)=>{
+	var sql = "insert into t_user(id,username,password,email) values(?,?,?,?);INSERT INTO t_user_role(user_id,role_id)  VALUE (?,(SELECT id FROM t_role WHERE rolename=?)) ";
+	var params = [user_id,username,password,email,user_id,rolename]
 	//出错时事务回滚
 	//conn.beginTransaction(function(err){
 		//if(err){
@@ -47,13 +46,13 @@ var insUser = (uid,username,password,phone,rid,callback)=>{
 		else{
 			flag=1;
 		}
-		console.log(data);
+		console
 		callback(flag);
 	});
 }
-var insUpload = (user_id,code,callback)=>{
-	var sql = "insert into t_upload(user_id,code) value(?,?)"
-	var params = [user_id,code];
+var insRecording = (user_id,hashcode,callback)=>{
+	var sql = "insert into t_recording(user_id,hashcode) value(?,?)"
+	var params = [user_id,hashcode];
 	conn.query(sql,params,(err,data)=>{
 		var result={};
 		if(err){
@@ -88,9 +87,11 @@ var selUpload=(user_id,callback)=>{
 		callback(result);
 	});
 }
+
 module.exports={
 	selUserByUserName:selUserByUserName,
 	insUser:insUser,
-	insUpload:insUpload,
-	selUpload:selUpload
+	insRecording:insRecording,
+	selUpload:selUpload,
+	
 }

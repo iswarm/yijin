@@ -12,7 +12,7 @@ var login = (username,password,callback)=>{
 		//用户名不存在x
 		if(user.length<1){
 			result={
-				isSuccess:false,
+				code:0,
 				message:"用户名不存在"
 			};
 		}
@@ -20,14 +20,14 @@ var login = (username,password,callback)=>{
 		//密码不正确
 		if(user[0].password!=password){
 			result={
-				isSuccess:false,
+				code:0,
 				message:"密码错误"
 			};
 		}
 		//密码正确
 		else{
 				result={
-					isSuccess:true,
+					code:1,
 					data:user[0]
 				};
 			}
@@ -42,22 +42,22 @@ var login = (username,password,callback)=>{
 	param4：rid(角色Id)
 	param5：callback(回调函数)
  */
-var register = (username,password,phone,rid,callback)=>{
+var register = (username,password,email,rolename,callback)=>{
 	
 		//生成用户Id
-	 	var uid = uuid.v1();
+	 	var user_id = uuid.v1();
 	 	//调用数据访问层的insUser方法
-	 	userDao.insUser(uid,username,password,phone,rid,function(flag){
+	 	userDao.insUser(user_id,username,password,email,rolename,function(flag){
 	 	//说明用户添加成功了
 	 	if(flag>0){
 	 		result={
-	 			isSuccess:true,
+	 			code:1,
 	 			message:"注册成功"
 	 		};
 	 		}else{
 	 			//否则失败
 	 		result={
-	 			isSuccess:false,
+	 			code:0,
 	 			message:"注册失败"
 	 		}; 
 	 	}
@@ -67,17 +67,17 @@ var register = (username,password,phone,rid,callback)=>{
 var upload = (user_id,code,callback)=>{
 	//调用数据访问层
 	var result = {};
-	userDao.insUpload(user_id,code,(res)=>{
+	userDao.insRecording(user_id,code,(res)=>{
 		if(res.flag>0){
 			//说明添加成功
 			result={
-				isSuccess:true,
+				code:1,
 				message:"上传成功"
 			};
 		}
 		else{
 			result={
-				isSuccess:false,
+				code:0,
 				message:res.message
 			};
 		}

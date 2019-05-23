@@ -53,8 +53,23 @@ var selNodeByChapterId=(chapterId,callback)=>{
 		callback(nodes);
 	});
 }
+
+var selCompleteCourses=(user_id,statecode,callback)=>{
+	var courses=[];
+	var sql = "select * from t_course where id in (select courseid from t_course_user where userId=? and state=?)";
+	conn.query(sql,[user_id,statecode],(err,data)=>{
+		if(err){
+			console.log(sql);
+			console.log(err);
+		}else{
+			courses = data; 
+		}
+		callback(courses);
+	});
+}
 module.exports={
 	selCourseByUid:selCourseByUid,
 	selChapterBycid:selChapterBycid,
 	selNodeByChapterId:selNodeByChapterId,
+	selCompleteCourses:selCompleteCourses,
 }

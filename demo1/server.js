@@ -1,6 +1,9 @@
 const express = require('express');
 const static = require('express-static');
 const bodyParser = require('body-parser');
+const userController =require('./controller/userController');
+const courseController = require('./controller/courseController');
+const recordingController = require('./controller/recordingController');
 const userService = require('./service/userService.js');
 const courseService = require('./service/courseService.js');
 
@@ -11,42 +14,17 @@ server.use(bodyParser.json());
 //监听8080端口
 server.listen(8080);
 //处理登录请求
-server.post("/login",(req,res)=>{
-	//取出参数username，password
-	var username = req.body.username;
-	var password = req.body.password;
-	//调用业务层login（）方法
-	var result = userService.login(username,password,function(result){
-		res.status(200).send(result).end();
-	});
-});
+server.post("/login",userController.login);
 //处理注册请求
-server.post("/register",(req,res)=>{
-	//取出用户名
-	var username = req.body.username;
-	//取出密码
-	var password = req.body.password;
-	//取出电话号码
-	var phone = req.body.phone;
-	//取出角色id
-	var rid = req.body.rid;
-	var result = userService.register(username,password,phone,rid,function(result){
-		res.status(200).send(result).end();
-	});
-});
+server.post("/register",userController.register);
 //处理查询课程列表的请求
-server.get("/course/:uid",(req,res)=>{
-	var uid = req.params.uid;
-	var result = courseService.getCourses(uid,(result)=>{
-		res.status(200).send(result).end();
-	});
-});
-server.get("/chapter/:cid",(req,res)=>{
-	var cid = req.params.cid;
-	var result = courseService.getChapters(cid,(result)=>{
-		res.status(200).send(result).end();
-	});
-});
+server.get("/user/:user_id/courses",courseController.getCoursesByUser_id);
+//处理查询已学课程的请求
+server.get("/user/:user_id/courses/state/:statecode",courseController.getCompleteCoursesByUser_id);
+//处理获取章节的请求
+server.get("/course/:course_id/chapters",courseController.getChaptersByCourse_id);
+
+//处理获取小节的请求
 server.get("/node/:chapterid",(req,res)=>{
 	var chapterid = req.params.chapterid;
 	var result = courseService.getNodes(chapterid,(result)=>{
@@ -55,13 +33,9 @@ server.get("/node/:chapterid",(req,res)=>{
 });
 
 //上传录制视频
-server.get("/upload/:user_id/:code",(req,res)=>{
-	var code = req.params.code;
-	var user_id = req.params.user_id;
-	userService.upload(user_id,code,(result)=>{
-		res.status(200).send(result).end();
-	});
-});
+//recordingController.upload
+server.put("/user/:user_id/recording/:hashcode",userController.upload);
+
 //获取上传
 server.get("/getVideo/:user_id",(req,res)=>{
 	var user_id = req.params.user_id;
@@ -70,11 +44,6 @@ server.get("/getVideo/:user_id",(req,res)=>{
 	});
 });
 //检查用户名是否存在
-server.get("/checkusername/:username",(req,res)=>{
-	var username = req.params.username;
-	userService.checkusername(username,(result)=>{
-		res.status(200).send(result).end();
-	});
-});
-//static数据1
+server.get("/username/:username",userController.checkusername);
+//static数据
 server.use(static("./static"));
