@@ -1071,7 +1071,7 @@ function gz$gwx_3(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_3)return __WXML_GLOBAL__.ops_cached.$gwx_3
 __WXML_GLOBAL__.ops_cached.$gwx_3=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'ea509b30'])
+Z([3,'a8a2ec30'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_3);return __WXML_GLOBAL__.ops_cached.$gwx_3
 }
 function gz$gwx_4(){
@@ -1079,14 +1079,44 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_4)return __WXML_GLOBAL__.ops_cached.$gwx_4
 __WXML_GLOBAL__.ops_cached.$gwx_4=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'ea509b30'])
+Z([3,'a8a2ec30'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
 }
 function gz$gwx_5(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_5)return __WXML_GLOBAL__.ops_cached.$gwx_5
 __WXML_GLOBAL__.ops_cached.$gwx_5=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'a8a2ec30'])
+Z([3,'abb6ec54'])
+Z([3,'_view abb6ec54'])
+Z([[7],[3,'show']])
+Z([[2,'!'],[[7],[3,'show']]])
+Z([3,'_view abb6ec54 login'])
+Z([3,'black'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'abb6ec54-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'cd9dce26'])
+Z([3,'30'])
+Z([3,'person-filled'])
+Z(z[5])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'abb6ec54-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z([3,'28'])
+Z([3,'locked'])
+Z([3,'_view abb6ec54 login-icon'])
+Z(z[5])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'abb6ec54-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z([3,'20'])
+Z([3,'weibo'])
+Z(z[5])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'abb6ec54-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z(z[19])
+Z([3,'weixin'])
+Z(z[5])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'abb6ec54-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z(z[19])
+Z([3,'qq'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_5);return __WXML_GLOBAL__.ops_cached.$gwx_5
 }
 function gz$gwx_6(){
@@ -1094,41 +1124,14 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_6)return __WXML_GLOBAL__.ops_cached.$gwx_6
 __WXML_GLOBAL__.ops_cached.$gwx_6=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'a8a2ec30'])
+Z([3,'abb6ec54'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_6);return __WXML_GLOBAL__.ops_cached.$gwx_6
 }
 function gz$gwx_7(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_7)return __WXML_GLOBAL__.ops_cached.$gwx_7
 __WXML_GLOBAL__.ops_cached.$gwx_7=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'abb6ec54'])
-Z([3,'_view abb6ec54 login'])
-Z([3,'black'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'abb6ec54-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'cd9dce26'])
-Z([3,'30'])
-Z([3,'person-filled'])
-Z(z[2])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'abb6ec54-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[4])
-Z([3,'28'])
-Z([3,'locked'])
-Z([3,'_view abb6ec54 login-icon'])
-Z(z[2])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'abb6ec54-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[4])
-Z([3,'20'])
-Z([3,'weibo'])
-Z(z[2])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'abb6ec54-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[4])
-Z(z[16])
-Z([3,'weixin'])
-Z(z[2])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'abb6ec54-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[4])
-Z(z[16])
-Z([3,'qq'])
+Z([3,'cd81f23c'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_7);return __WXML_GLOBAL__.ops_cached.$gwx_7
 }
 function gz$gwx_8(){
@@ -1136,14 +1139,14 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_8)return __WXML_GLOBAL__.ops_cached.$gwx_8
 __WXML_GLOBAL__.ops_cached.$gwx_8=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'abb6ec54'])
+Z([3,'cd81f23c'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_8);return __WXML_GLOBAL__.ops_cached.$gwx_8
 }
 function gz$gwx_9(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_9)return __WXML_GLOBAL__.ops_cached.$gwx_9
 __WXML_GLOBAL__.ops_cached.$gwx_9=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'cd81f23c'])
+Z([3,'9998e57c'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_9);return __WXML_GLOBAL__.ops_cached.$gwx_9
 }
 function gz$gwx_10(){
@@ -1151,29 +1154,26 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
 __WXML_GLOBAL__.ops_cached.$gwx_10=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'cd81f23c'])
+Z([3,'9998e57c'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/uni-icon.vue.wxml','./components/uni-icon.vue.wxml','./pages/222/222.vue.wxml','./pages/222/222.wxml','./222.vue.wxml','./pages/index/index.vue.wxml','./pages/index/index.wxml','./index.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/register/register.vue.wxml','./pages/register/register.wxml','./register.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','./components/uni-icon.vue.wxml','./pages/index/index.vue.wxml','./pages/index/index.wxml','./index.vue.wxml','./pages/login/login.vue.wxml','/components/uni-icon.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/register/register.vue.wxml','./pages/register/register.wxml','./register.vue.wxml','./pages/web-view/web-view.vue.wxml','./pages/web-view/web-view.wxml','./web-view.vue.wxml'];d_[x[0]]={}
 var m0=function(e,s,r,gg){
 var z=gz$gwx_1()
-var oB=e_[x[0]].i
-_ai(oB,x[1],e_,x[0],1,1)
-oB.pop()
 return r
 }
-e_[x[0]]={f:m0,j:[],i:[],ti:[x[1]],ic:[]}
-d_[x[2]]={}
-d_[x[2]]["cd9dce26"]=function(e,s,r,gg){
+e_[x[0]]={f:m0,j:[],i:[],ti:[],ic:[]}
+d_[x[1]]={}
+d_[x[1]]["cd9dce26"]=function(e,s,r,gg){
 var z=gz$gwx_2()
-var b=x[2]+':cd9dce26'
+var b=x[1]+':cd9dce26'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/uni-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[2]);return}
+if(p_[b]){_wl(b,x[1]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -1187,14 +1187,14 @@ var m1=function(e,s,r,gg){
 var z=gz$gwx_2()
 return r
 }
-e_[x[2]]={f:m1,j:[],i:[],ti:[],ic:[]}
-d_[x[3]]={}
-d_[x[3]]["ea509b30"]=function(e,s,r,gg){
+e_[x[1]]={f:m1,j:[],i:[],ti:[],ic:[]}
+d_[x[2]]={}
+d_[x[2]]["a8a2ec30"]=function(e,s,r,gg){
 var z=gz$gwx_3()
-var b=x[3]+':ea509b30'
+var b=x[2]+':a8a2ec30'
 r.wxVkey=b
-gg.f=$gdc(f_["./pages/222/222.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[3]);return}
+gg.f=$gdc(f_["./pages/index/index.vue.wxml"],"",1)
+if(p_[b]){_wl(b,x[2]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -1208,39 +1208,138 @@ var m2=function(e,s,r,gg){
 var z=gz$gwx_3()
 return r
 }
-e_[x[3]]={f:m2,j:[],i:[],ti:[],ic:[]}
-d_[x[4]]={}
+e_[x[2]]={f:m2,j:[],i:[],ti:[],ic:[]}
+d_[x[3]]={}
 var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
-var cF=e_[x[4]].i
-_ai(cF,x[5],e_,x[4],1,1)
-var hG=_v()
-_(r,hG)
-cs.push("./pages/222/222.wxml:template:2:6")
-var oH=_oz(z,1,e,s,gg)
-var cI=_gd(x[4],oH,e_,d_)
-if(cI){
-var oJ=_1z(z,0,e,s,gg) || {}
+var fE=e_[x[3]].i
+_ai(fE,x[4],e_,x[3],1,1)
+var cF=_v()
+_(r,cF)
+cs.push("./pages/index/index.wxml:template:2:6")
+var hG=_oz(z,1,e,s,gg)
+var oH=_gd(x[3],hG,e_,d_)
+if(oH){
+var cI=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-hG.wxXCkey=3
-cI(oJ,oJ,hG,gg)
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[4],2,18)
+else _w(hG,x[3],2,18)
 cs.pop()
-cF.pop()
+fE.pop()
 return r
 }
-e_[x[4]]={f:m3,j:[],i:[],ti:[x[5]],ic:[]}
-d_[x[6]]={}
-d_[x[6]]["a8a2ec30"]=function(e,s,r,gg){
+e_[x[3]]={f:m3,j:[],i:[],ti:[x[4]],ic:[]}
+d_[x[5]]={}
+d_[x[5]]["abb6ec54"]=function(e,s,r,gg){
 var z=gz$gwx_5()
-var b=x[6]+':a8a2ec30'
+var b=x[5]+':abb6ec54'
 r.wxVkey=b
-gg.f=$gdc(f_["./pages/index/index.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[6]);return}
+gg.f=$gdc(f_["./pages/login/login.vue.wxml"],"",1)
+if(p_[b]){_wl(b,x[5]);return}
 p_[b]=true
 try{
+cs.push("./pages/login/login.vue.wxml:view:1:73")
+var oB=_n('view')
+_rz(z,oB,'class',1,e,s,gg)
+var xC=_v()
+_(oB,xC)
+if(_oz(z,2,e,s,gg)){xC.wxVkey=1
+cs.push("./pages/login/login.vue.wxml:image:1:102")
+cs.pop()
+}
+var oD=_v()
+_(oB,oD)
+if(_oz(z,3,e,s,gg)){oD.wxVkey=1
+cs.push("./pages/login/login.vue.wxml:image:1:191")
+cs.pop()
+}
+cs.push("./pages/login/login.vue.wxml:view:1:285")
+var fE=_n('view')
+_rz(z,fE,'class',4,e,s,gg)
+var cF=_v()
+_(fE,cF)
+cs.push("./pages/login/login.vue.wxml:template:1:358")
+var hG=_oz(z,7,e,s,gg)
+var oH=_gd(x[5],hG,e_,d_)
+if(oH){
+var cI=_1z(z,6,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[5],1,474)
+cs.pop()
+var oJ=_v()
+_(fE,oJ)
+cs.push("./pages/login/login.vue.wxml:template:1:703")
+var lK=_oz(z,12,e,s,gg)
+var aL=_gd(x[5],lK,e_,d_)
+if(aL){
+var tM=_1z(z,11,e,s,gg) || {}
+var cur_globalf=gg.f
+oJ.wxXCkey=3
+aL(tM,tM,oJ,gg)
+gg.f=cur_globalf
+}
+else _w(lK,x[5],1,812)
+cs.pop()
+cs.push("./pages/login/login.vue.wxml:view:1:1622")
+var eN=_n('view')
+_rz(z,eN,'class',15,e,s,gg)
+var bO=_v()
+_(eN,bO)
+cs.push("./pages/login/login.vue.wxml:template:1:1662")
+var oP=_oz(z,18,e,s,gg)
+var xQ=_gd(x[5],oP,e_,d_)
+if(xQ){
+var oR=_1z(z,17,e,s,gg) || {}
+var cur_globalf=gg.f
+bO.wxXCkey=3
+xQ(oR,oR,bO,gg)
+gg.f=cur_globalf
+}
+else _w(oP,x[5],1,1770)
+cs.pop()
+var fS=_v()
+_(eN,fS)
+cs.push("./pages/login/login.vue.wxml:template:1:1793")
+var cT=_oz(z,23,e,s,gg)
+var hU=_gd(x[5],cT,e_,d_)
+if(hU){
+var oV=_1z(z,22,e,s,gg) || {}
+var cur_globalf=gg.f
+fS.wxXCkey=3
+hU(oV,oV,fS,gg)
+gg.f=cur_globalf
+}
+else _w(cT,x[5],1,1902)
+cs.pop()
+var cW=_v()
+_(eN,cW)
+cs.push("./pages/login/login.vue.wxml:template:1:1925")
+var oX=_oz(z,28,e,s,gg)
+var lY=_gd(x[5],oX,e_,d_)
+if(lY){
+var aZ=_1z(z,27,e,s,gg) || {}
+var cur_globalf=gg.f
+cW.wxXCkey=3
+lY(aZ,aZ,cW,gg)
+gg.f=cur_globalf
+}
+else _w(oX,x[5],1,2030)
+cs.pop()
+cs.pop()
+_(fE,eN)
+cs.pop()
+_(oB,fE)
+xC.wxXCkey=1
+oD.wxXCkey=1
+cs.pop()
+_(r,oB)
 }catch(err){
 p_[b]=false
 throw err
@@ -1250,9 +1349,12 @@ return r
 }
 var m4=function(e,s,r,gg){
 var z=gz$gwx_5()
+var lK=e_[x[5]].i
+_ai(lK,x[6],e_,x[5],1,1)
+lK.pop()
 return r
 }
-e_[x[6]]={f:m4,j:[],i:[],ti:[],ic:[]}
+e_[x[5]]={f:m4,j:[],i:[],ti:[x[6]],ic:[]}
 d_[x[7]]={}
 var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
@@ -1260,7 +1362,7 @@ var tM=e_[x[7]].i
 _ai(tM,x[8],e_,x[7],1,1)
 var eN=_v()
 _(r,eN)
-cs.push("./pages/index/index.wxml:template:2:6")
+cs.push("./pages/login/login.wxml:template:2:6")
 var bO=_oz(z,1,e,s,gg)
 var oP=_gd(x[7],bO,e_,d_)
 if(oP){
@@ -1277,94 +1379,14 @@ return r
 }
 e_[x[7]]={f:m5,j:[],i:[],ti:[x[8]],ic:[]}
 d_[x[9]]={}
-d_[x[9]]["abb6ec54"]=function(e,s,r,gg){
+d_[x[9]]["cd81f23c"]=function(e,s,r,gg){
 var z=gz$gwx_7()
-var b=x[9]+':abb6ec54'
+var b=x[9]+':cd81f23c'
 r.wxVkey=b
-gg.f=$gdc(f_["./pages/login/login.vue.wxml"],"",1)
+gg.f=$gdc(f_["./pages/register/register.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[9]);return}
 p_[b]=true
 try{
-cs.push("./pages/login/login.vue.wxml:view:1:245")
-var oB=_n('view')
-_rz(z,oB,'class',1,e,s,gg)
-var xC=_v()
-_(oB,xC)
-cs.push("./pages/login/login.vue.wxml:template:1:318")
-var oD=_oz(z,4,e,s,gg)
-var fE=_gd(x[9],oD,e_,d_)
-if(fE){
-var cF=_1z(z,3,e,s,gg) || {}
-var cur_globalf=gg.f
-xC.wxXCkey=3
-fE(cF,cF,xC,gg)
-gg.f=cur_globalf
-}
-else _w(oD,x[9],1,434)
-cs.pop()
-var hG=_v()
-_(oB,hG)
-cs.push("./pages/login/login.vue.wxml:template:1:663")
-var oH=_oz(z,9,e,s,gg)
-var cI=_gd(x[9],oH,e_,d_)
-if(cI){
-var oJ=_1z(z,8,e,s,gg) || {}
-var cur_globalf=gg.f
-hG.wxXCkey=3
-cI(oJ,oJ,hG,gg)
-gg.f=cur_globalf
-}
-else _w(oH,x[9],1,772)
-cs.pop()
-cs.push("./pages/login/login.vue.wxml:view:1:1571")
-var lK=_n('view')
-_rz(z,lK,'class',12,e,s,gg)
-var aL=_v()
-_(lK,aL)
-cs.push("./pages/login/login.vue.wxml:template:1:1611")
-var tM=_oz(z,15,e,s,gg)
-var eN=_gd(x[9],tM,e_,d_)
-if(eN){
-var bO=_1z(z,14,e,s,gg) || {}
-var cur_globalf=gg.f
-aL.wxXCkey=3
-eN(bO,bO,aL,gg)
-gg.f=cur_globalf
-}
-else _w(tM,x[9],1,1719)
-cs.pop()
-var oP=_v()
-_(lK,oP)
-cs.push("./pages/login/login.vue.wxml:template:1:1742")
-var xQ=_oz(z,20,e,s,gg)
-var oR=_gd(x[9],xQ,e_,d_)
-if(oR){
-var fS=_1z(z,19,e,s,gg) || {}
-var cur_globalf=gg.f
-oP.wxXCkey=3
-oR(fS,fS,oP,gg)
-gg.f=cur_globalf
-}
-else _w(xQ,x[9],1,1851)
-cs.pop()
-var cT=_v()
-_(lK,cT)
-cs.push("./pages/login/login.vue.wxml:template:1:1874")
-var hU=_oz(z,25,e,s,gg)
-var oV=_gd(x[9],hU,e_,d_)
-if(oV){
-var cW=_1z(z,24,e,s,gg) || {}
-var cur_globalf=gg.f
-cT.wxXCkey=3
-oV(cW,cW,cT,gg)
-gg.f=cur_globalf
-}
-else _w(hU,x[9],1,1979)
-cs.pop()
-cs.pop()
-_(oB,lK)
-cs.pop()
-_(r,oB)
 }catch(err){
 p_[b]=false
 throw err
@@ -1374,41 +1396,38 @@ return r
 }
 var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
-var fS=e_[x[9]].i
-_ai(fS,x[1],e_,x[9],1,1)
-fS.pop()
 return r
 }
-e_[x[9]]={f:m6,j:[],i:[],ti:[x[1]],ic:[]}
+e_[x[9]]={f:m6,j:[],i:[],ti:[],ic:[]}
 d_[x[10]]={}
 var m7=function(e,s,r,gg){
 var z=gz$gwx_8()
-var hU=e_[x[10]].i
-_ai(hU,x[11],e_,x[10],1,1)
-var oV=_v()
-_(r,oV)
-cs.push("./pages/login/login.wxml:template:2:6")
-var cW=_oz(z,1,e,s,gg)
-var oX=_gd(x[10],cW,e_,d_)
-if(oX){
-var lY=_1z(z,0,e,s,gg) || {}
+var cT=e_[x[10]].i
+_ai(cT,x[11],e_,x[10],1,1)
+var hU=_v()
+_(r,hU)
+cs.push("./pages/register/register.wxml:template:2:6")
+var oV=_oz(z,1,e,s,gg)
+var cW=_gd(x[10],oV,e_,d_)
+if(cW){
+var oX=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-oV.wxXCkey=3
-oX(lY,lY,oV,gg)
+hU.wxXCkey=3
+cW(oX,oX,hU,gg)
 gg.f=cur_globalf
 }
-else _w(cW,x[10],2,18)
+else _w(oV,x[10],2,18)
 cs.pop()
-hU.pop()
+cT.pop()
 return r
 }
 e_[x[10]]={f:m7,j:[],i:[],ti:[x[11]],ic:[]}
 d_[x[12]]={}
-d_[x[12]]["cd81f23c"]=function(e,s,r,gg){
+d_[x[12]]["9998e57c"]=function(e,s,r,gg){
 var z=gz$gwx_9()
-var b=x[12]+':cd81f23c'
+var b=x[12]+':9998e57c'
 r.wxVkey=b
-gg.f=$gdc(f_["./pages/register/register.vue.wxml"],"",1)
+gg.f=$gdc(f_["./pages/web-view/web-view.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[12]);return}
 p_[b]=true
 try{
@@ -1427,23 +1446,23 @@ e_[x[12]]={f:m8,j:[],i:[],ti:[],ic:[]}
 d_[x[13]]={}
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
-var e2=e_[x[13]].i
-_ai(e2,x[14],e_,x[13],1,1)
-var b3=_v()
-_(r,b3)
-cs.push("./pages/register/register.wxml:template:2:6")
-var o4=_oz(z,1,e,s,gg)
-var x5=_gd(x[13],o4,e_,d_)
-if(x5){
-var o6=_1z(z,0,e,s,gg) || {}
+var t1=e_[x[13]].i
+_ai(t1,x[14],e_,x[13],1,1)
+var e2=_v()
+_(r,e2)
+cs.push("./pages/web-view/web-view.wxml:template:2:6")
+var b3=_oz(z,1,e,s,gg)
+var o4=_gd(x[13],b3,e_,d_)
+if(o4){
+var x5=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-b3.wxXCkey=3
-x5(o6,o6,b3,gg)
+e2.wxXCkey=3
+o4(x5,x5,e2,gg)
 gg.f=cur_globalf
 }
-else _w(o4,x[13],2,18)
+else _w(b3,x[13],2,18)
 cs.pop()
-e2.pop()
+t1.pop()
 return r
 }
 e_[x[13]]={f:m9,j:[],i:[],ti:[x[14]],ic:[]}
@@ -1467,7 +1486,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/index/index","pages/login/login","pages/register/register","pages/222/222"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"},"usingComponents":{},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"YiJin"};
+__wxAppCode__['app.json']={"pages":["pages/login/login","pages/index/index","pages/register/register","pages/web-view/web-view"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"},"usingComponents":{},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"YiJin"};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 
@@ -1861,34 +1880,6 @@ eval("\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages.json");
 
 }]);
 });
-define('pages/222/222.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-"use strict";(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/222/222"], {
-
-  /***/"E:\\翼进\\YiJin\\main.js?{\"page\":\"pages%2F222%2F222\"}":
-  /*!********************************************************!*\
-                                                                    !*** E:/翼进/YiJin/main.js?{"page":"pages%2F222%2F222"} ***!
-                                                                    \********************************************************/
-  /*! no static exports found */
-  /***/function EYiJinMainJsPagePages2F2222F222(module, exports, __webpack_require__) {
-
-    "use strict";
-    eval("__webpack_require__(/*! uni-pages */ \"E:\\\\翼进\\\\YiJin\\\\pages.json\");\nvar _mpvuePageFactory = _interopRequireDefault(__webpack_require__(/*! mpvue-page-factory */ \"./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue-page-factory/index.js\"));\nvar _ = _interopRequireDefault(__webpack_require__(/*! ./pages/222/222.vue */ \"E:\\\\翼进\\\\YiJin\\\\pages\\\\222\\\\222.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}\nPage((0, _mpvuePageFactory.default)(_.default));\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/main.js?%7B%22page%22:%22pages%252F222%252F222%22%7D");
-
-    /***/},
-
-  /***/"E:\\翼进\\YiJin\\pages\\222\\222.vue":
-  /*!*************************************!*\
-                                               !*** E:/翼进/YiJin/pages/222/222.vue ***!
-                                               \*************************************/
-  /*! no static exports found */
-  /***/function EYiJinPages222222Vue(module, exports) {
-
-    eval("throw new Error(\"Module build failed (from ./node_modules/vue-loader/lib/index.js):\\nError: ENOENT: no such file or directory, open 'E:\\\\翼进\\\\YiJin\\\\pages\\\\222\\\\222.vue'\");\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/222/222.vue");
-
-    /***/} },
-
-[["E:\\翼进\\YiJin\\main.js?{\"page\":\"pages%2F222%2F222\"}", "common/runtime", "common/vendor"]]]);
-});
 
 define('app.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
 require('./common/runtime.js')
@@ -1911,7 +1902,7 @@ define('pages/login/login.js',function(require, module, exports, window, documen
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-icon.vue */ \"E:\\\\翼进\\\\YiJin\\\\components\\\\uni-icon.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n{\n  data: function data() {\n    return {\n      name: '',\n      pwd: '' };\n\n  },\n  components: {\n    uniIcon: _uniIcon.default },\n\n  methods: {\n    login: function login() {//登录\n      uni.redirectTo({\n        url: '../index/index' });\n\n    },\n    test: function test() {//登录\n      uni.redirectTo({\n        url: '../index/index' });\n\n    },\n    register: function register() {//注册\n      uni.redirectTo({\n        url: '../register/register' });\n\n    },\n    goLogin: function goLogin() {\n      if (this.name.length <= 0) {\n        uni.showToast({\n          icon: 'none',\n          title: \"请输入用户名\" });\n\n        return;\n      }\n      if (this.pwd.length <= 0) {\n        uni.showToast({\n          icon: 'none',\n          title: \"请输入密码\" });\n\n        return;\n      }\n      uni.request({\n        url: 'http://192.168.43.99:8080/user/login', //开发者服务器接口地址\n        method: 'POST', //get或post\n        data: { //请求的参数\n          userName: this.name,\n          password: this.pwd },\n\n        success: function success(res) {\n          //console.log(this.name)\n          console.log(res.data);\n          uni.showToast({ //交互反馈接口，显示消息提示框。\n            icon: 'none',\n            title: '登录成功' });\n\n        },\n        fail: function fail() {\n          uni.hideLoading(); //隐藏 loading 提示框。\n          console.log(\"请求失败\");\n          //console.log(this.name)\n        },\n        complete: function complete() {} });\n\n    },\n    gettest: function gettest() {\n      uni.redirectTo({ //登录成功页面跳转\n        url: '../222/222' });\n\n    },\n    WX_MP_getuserinfo: function WX_MP_getuserinfo(e) {\n      //微信小程序微信登录方法\t\n      uni.login({\n        provider: 'weixin',\n        success: function success(loginRes) {\n          //登录成功\n          uni.getUserInfo({\n            success: function success(res) {\n              var userInfo = res.userInfo;\n              var nickName = userInfo.nickName; //读取头像\n              var avatarUrl = userInfo.avatarUrl;\n              uni.setStorageSync('wxname', nickName); //缓存\n              uni.setStorageSync('wximg', avatarUrl);\n\n            } });\n\n          uni.redirectTo({ //登录成功页面跳转\n            url: '../register/register' });\n\n        },\n        fail: function fail() {\n        } });\n\n    } },\n\n  onLoad: function onLoad() {//第一次加载\n  },\n  beforeUpdate: function beforeUpdate() {//数据更新时调用此生命周期函数\n    this.wx.setname(this.test);\n  } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/login/login.vue?vue&type=script&lang=js&?3597");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-icon.vue */ \"E:\\\\翼进\\\\YiJin\\\\components\\\\uni-icon.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n{\n  data: function data() {\n    return {\n      name: '',\n      pwd: '',\n      show: true };\n\n  },\n  components: {\n    uniIcon: _uniIcon.default },\n\n  methods: {\n    login: function login() {//登录\n      uni.navigateTo({\n        url: '../index/index' });\n\n    },\n    test: function test() {//登录\n      uni.navigateTo({\n        url: '../index/index' });\n\n    },\n    register: function register() {//注册\n      uni.navigateTo({\n        url: '../register/register' });\n\n    },\n    goLogin: function goLogin() {\n      if (this.name.length <= 0) {\n        uni.showToast({\n          icon: 'none',\n          title: \"请输入用户名\" });\n\n        return;\n      }\n      if (this.pwd.length <= 0) {\n        uni.showToast({\n          icon: 'none',\n          title: \"请输入密码\" });\n\n        return;\n      }\n      uni.request({\n        url: 'http://yijint.top:8089/login', //开发者服务器接口地址\n        method: 'POST', //get或post\n        data: { //请求的参数\n          userName: this.name,\n          password: this.pwd },\n\n        success: function success(res) {\n          //console.log(this.name)\n          console.log(res.data);\n          uni.showToast({ //交互反馈接口，显示消息提示框。\n            icon: 'none',\n            title: '登录成功' });\n\n        },\n        fail: function fail() {\n          uni.hideLoading(); //隐藏 loading 提示框。\n          console.log(\"请求失败\");\n          //console.log(this.name)\n        },\n        complete: function complete() {} });\n\n    },\n    gettest: function gettest() {\n      uni.navigateTo({ //登录成功页面跳转\n        url: '../222/222' });\n\n    },\n    WX_MP_getuserinfo: function WX_MP_getuserinfo(e) {\n      //微信小程序微信登录方法\t\n      uni.login({\n        provider: 'weixin',\n        success: function success(loginRes) {\n          //登录成功\n          uni.getUserInfo({\n            success: function success(res) {\n              var userInfo = res.userInfo;\n              var nickName = userInfo.nickName; //读取头像\n              var avatarUrl = userInfo.avatarUrl;\n              uni.setStorageSync('wxname', nickName); //缓存\n              uni.setStorageSync('wximg', avatarUrl);\n\n            } });\n\n          uni.navigateTo({ //登录成功页面跳转\n            url: '../register/register' });\n\n        },\n        fail: function fail() {\n        } });\n\n    } },\n\n  onLoad: function onLoad() {//第一次加载\n  },\n  beforeUpdate: function beforeUpdate() {//数据更新时调用此生命周期函数\n\n  } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/login/login.vue?vue&type=script&lang=js&?3597");
 
 /***/ }),
 
@@ -1934,7 +1925,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=E:/%E7%BF%BC%E8%B
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    [\n      _c(\"image\", {\n        staticClass: \"logo\",\n        attrs: { src: \"../../static/logo.png\" }\n      }),\n      _c(\"open-data\", {\n        attrs: { type: \"userNickName\", mpcomid: \"abb6ec54-0\" }\n      }),\n      _c(\n        \"view\",\n        { staticClass: \"login\" },\n        [\n          _c(\n            \"view\",\n            { staticClass: \"login-xy\" },\n            [\n              _c(\"uni-icon\", {\n                attrs: {\n                  type: \"person-filled\",\n                  size: \"30\",\n                  color: \"black\",\n                  mpcomid: \"abb6ec54-1\"\n                }\n              }),\n              _c(\"input\", {\n                directives: [\n                  {\n                    name: \"model\",\n                    rawName: \"v-model\",\n                    value: _vm.name,\n                    expression: \"name\"\n                  }\n                ],\n                staticClass: \"login-txt\",\n                attrs: { placeholder: \"用户名\", eventid: \"abb6ec54-0\" },\n                domProps: { value: _vm.name },\n                on: {\n                  input: function($event) {\n                    if ($event.target.composing) {\n                      return\n                    }\n                    _vm.name = $event.target.value\n                  }\n                }\n              })\n            ],\n            1\n          ),\n          _c(\n            \"view\",\n            { staticClass: \"login-xy\" },\n            [\n              _c(\"uni-icon\", {\n                attrs: {\n                  type: \"locked\",\n                  size: \"28\",\n                  color: \"black\",\n                  mpcomid: \"abb6ec54-2\"\n                }\n              }),\n              _c(\"input\", {\n                directives: [\n                  {\n                    name: \"model\",\n                    rawName: \"v-model\",\n                    value: _vm.pwd,\n                    expression: \"pwd\"\n                  }\n                ],\n                staticClass: \"login-txt\",\n                staticStyle: { \"letter-spacing\": \"15px\" },\n                attrs: {\n                  placeholder: \"密码\",\n                  password: \"\",\n                  eventid: \"abb6ec54-1\"\n                },\n                domProps: { value: _vm.pwd },\n                on: {\n                  input: function($event) {\n                    if ($event.target.composing) {\n                      return\n                    }\n                    _vm.pwd = $event.target.value\n                  }\n                }\n              })\n            ],\n            1\n          ),\n          _c(\n            \"button\",\n            {\n              staticClass: \"button\",\n              attrs: { eventid: \"abb6ec54-2\" },\n              on: {\n                tap: function($event) {\n                  _vm.goLogin()\n                }\n              }\n            },\n            [_vm._v(\"登录\")]\n          ),\n          _c(\"view\", { staticClass: \"forgot-psd\" }, [\n            _c(\n              \"text\",\n              {\n                attrs: { eventid: \"abb6ec54-3\" },\n                on: {\n                  click: function($event) {\n                    _vm.test()\n                  }\n                }\n              },\n              [_vm._v(\"忘记密码\")]\n            ),\n            _c(\"text\", { staticClass: \"forgot-psd-spacing\" }, [_vm._v(\"|\")]),\n            _c(\n              \"text\",\n              {\n                attrs: { eventid: \"abb6ec54-4\" },\n                on: {\n                  click: function($event) {\n                    _vm.register()\n                  }\n                }\n              },\n              [_vm._v(\"注册账号\")]\n            )\n          ]),\n          _c(\n            \"view\",\n            { staticStyle: { \"text-align\": \"center\", \"margin-top\": \"40%\" } },\n            [_vm._v(\"第三方登录\")]\n          ),\n          _c(\n            \"view\",\n            { staticClass: \"login-icon\" },\n            [\n              _c(\"uni-icon\", {\n                attrs: {\n                  type: \"weibo\",\n                  size: \"20\",\n                  color: \"black\",\n                  mpcomid: \"abb6ec54-3\"\n                }\n              }),\n              _c(\"uni-icon\", {\n                attrs: {\n                  type: \"weixin\",\n                  size: \"20\",\n                  color: \"black\",\n                  mpcomid: \"abb6ec54-4\"\n                }\n              }),\n              _c(\"uni-icon\", {\n                attrs: {\n                  type: \"qq\",\n                  size: \"20\",\n                  color: \"black\",\n                  mpcomid: \"abb6ec54-5\"\n                }\n              })\n            ],\n            1\n          )\n        ],\n        1\n      )\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/login/login.vue?vue&type=template&id=5f257a94&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", [\n    _vm.show\n      ? _c(\"image\", {\n          staticClass: \"logo\",\n          attrs: { src: \"../../static/logo.png\" }\n        })\n      : _vm._e(),\n    !_vm.show\n      ? _c(\"image\", {\n          staticClass: \"logo\",\n          attrs: { src: \"../../static/shuijiao.jpg\" }\n        })\n      : _vm._e(),\n    _c(\n      \"view\",\n      { staticClass: \"login\" },\n      [\n        _c(\n          \"view\",\n          { staticClass: \"login-xy\" },\n          [\n            _c(\"uni-icon\", {\n              attrs: {\n                type: \"person-filled\",\n                size: \"30\",\n                color: \"black\",\n                mpcomid: \"abb6ec54-0\"\n              }\n            }),\n            _c(\"input\", {\n              directives: [\n                {\n                  name: \"model\",\n                  rawName: \"v-model\",\n                  value: _vm.name,\n                  expression: \"name\"\n                }\n              ],\n              staticClass: \"login-txt\",\n              attrs: { placeholder: \"用户名\", eventid: \"abb6ec54-0\" },\n              domProps: { value: _vm.name },\n              on: {\n                input: function($event) {\n                  if ($event.target.composing) {\n                    return\n                  }\n                  _vm.name = $event.target.value\n                }\n              }\n            })\n          ],\n          1\n        ),\n        _c(\n          \"view\",\n          { staticClass: \"login-xy\" },\n          [\n            _c(\"uni-icon\", {\n              attrs: {\n                type: \"locked\",\n                size: \"28\",\n                color: \"black\",\n                mpcomid: \"abb6ec54-1\"\n              }\n            }),\n            _c(\"input\", {\n              directives: [\n                {\n                  name: \"model\",\n                  rawName: \"v-model\",\n                  value: _vm.pwd,\n                  expression: \"pwd\"\n                }\n              ],\n              staticClass: \"login-txt\",\n              staticStyle: { \"letter-spacing\": \"15px\" },\n              attrs: {\n                placeholder: \"密码\",\n                password: \"\",\n                eventid: \"abb6ec54-1\"\n              },\n              domProps: { value: _vm.pwd },\n              on: {\n                click: function($event) {\n                  _vm.show = true\n                },\n                input: function($event) {\n                  if ($event.target.composing) {\n                    return\n                  }\n                  _vm.pwd = $event.target.value\n                }\n              }\n            })\n          ],\n          1\n        ),\n        _c(\n          \"button\",\n          {\n            staticClass: \"button\",\n            attrs: { eventid: \"abb6ec54-2\" },\n            on: {\n              tap: function($event) {\n                _vm.goLogin()\n              }\n            }\n          },\n          [_vm._v(\"登录\")]\n        ),\n        _c(\"view\", { staticClass: \"forgot-psd\" }, [\n          _c(\n            \"text\",\n            {\n              attrs: { eventid: \"abb6ec54-3\" },\n              on: {\n                click: function($event) {\n                  _vm.test()\n                }\n              }\n            },\n            [_vm._v(\"忘记密\")]\n          ),\n          _c(\"text\", { staticClass: \"forgot-psd-spacing\" }, [_vm._v(\"|\")]),\n          _c(\n            \"text\",\n            {\n              attrs: { eventid: \"abb6ec54-4\" },\n              on: {\n                click: function($event) {\n                  _vm.register()\n                }\n              }\n            },\n            [_vm._v(\"注册账号\")]\n          )\n        ]),\n        _c(\"view\", { staticClass: \"bottom\" }, [\n          _c(\"view\", [_vm._v(\"第三方登录\")]),\n          _c(\n            \"view\",\n            { staticClass: \"login-icon\" },\n            [\n              _c(\"uni-icon\", {\n                attrs: {\n                  type: \"weibo\",\n                  size: \"20\",\n                  color: \"black\",\n                  mpcomid: \"abb6ec54-2\"\n                }\n              }),\n              _c(\"uni-icon\", {\n                attrs: {\n                  type: \"weixin\",\n                  size: \"20\",\n                  color: \"black\",\n                  mpcomid: \"abb6ec54-3\"\n                }\n              }),\n              _c(\"uni-icon\", {\n                attrs: {\n                  type: \"qq\",\n                  size: \"20\",\n                  color: \"black\",\n                  mpcomid: \"abb6ec54-4\"\n                }\n              })\n            ],\n            1\n          )\n        ])\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/login/login.vue?vue&type=template&id=5f257a94&");
 
 /***/ }),
 
@@ -2014,18 +2005,7 @@ define('pages/index/index.js',function(require, module, exports, window, documen
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default =\n\n\n\n\n\n\n\n\n{\n  data: function data() {\n    return {};\n\n  },\n  components: {},\n\n\n  onLoad: function onLoad() {\n  },\n  methods: {} };exports.default = _default;\n\n//# sourceURL=uni-app:///pages/index/index.vue?vue&type=script&lang=js&?0107");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!E:\\翼进\\YiJin\\pages\\index\\index.vue?vue&type=style&index=0&lang=css&":
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!./node_modules/css-loader??ref--6-oneOf-1-2!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/vue-loader/lib??vue-loader-options!E:/翼进/YiJin/pages/index/index.vue?vue&type=style&index=0&lang=css& ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/index/index.vue?vue&type=style&index=0&lang=css&");
+eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default =\n\n\n\n\n\n\n{\n  data: function data() {\n    return {};\n\n  },\n  components: {},\n\n\n  onLoad: function onLoad() {\n  },\n  methods: {} };exports.default = _default;\n\n//# sourceURL=uni-app:///pages/index/index.vue?vue&type=script&lang=js&?0107");
 
 /***/ }),
 
@@ -2037,7 +2017,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=E:/%E7%BF%BC%E8%B
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _vm._m(0)\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", [_c(\"view\", { staticClass: \"screen\" }, [_vm._v(\"te\")])])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/index/index.vue?vue&type=template&id=e6a5bcb4&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticStyle: { width: \"100%\", background: \"#0000FF\" } },\n    [\n      _c(\"web-view\", {\n        attrs: { src: \"../../hybrid/html/paly.html\", mpcomid: \"a8a2ec30-0\" }\n      })\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/index/index.vue?vue&type=template&id=e6a5bcb4&");
 
 /***/ }),
 
@@ -2061,7 +2041,7 @@ eval("__webpack_require__(/*! uni-pages */ \"E:\\\\翼进\\\\YiJin\\\\pages.json
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_vue_vue_type_template_id_e6a5bcb4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=e6a5bcb4& */ \"E:\\\\翼进\\\\YiJin\\\\pages\\\\index\\\\index.vue?vue&type=template&id=e6a5bcb4&\");\n/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ \"E:\\\\翼进\\\\YiJin\\\\pages\\\\index\\\\index.vue?vue&type=script&lang=js&\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.vue?vue&type=style&index=0&lang=css& */ \"E:\\\\翼进\\\\YiJin\\\\pages\\\\index\\\\index.vue?vue&type=style&index=0&lang=css&\");\n/* harmony import */ var _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(\n  _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _index_vue_vue_type_template_id_e6a5bcb4___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _index_vue_vue_type_template_id_e6a5bcb4___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"E:/翼进/YiJin/pages/index/index.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/index/index.vue");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_vue_vue_type_template_id_e6a5bcb4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=e6a5bcb4& */ \"E:\\\\翼进\\\\YiJin\\\\pages\\\\index\\\\index.vue?vue&type=template&id=e6a5bcb4&\");\n/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ \"E:\\\\翼进\\\\YiJin\\\\pages\\\\index\\\\index.vue?vue&type=script&lang=js&\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _index_vue_vue_type_template_id_e6a5bcb4___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _index_vue_vue_type_template_id_e6a5bcb4___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"E:/翼进/YiJin/pages/index/index.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/index/index.vue");
 
 /***/ }),
 
@@ -2074,18 +2054,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ \"./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!E:\\\\翼进\\\\YiJin\\\\pages\\\\index\\\\index.vue?vue&type=script&lang=js&\");\n/* harmony import */ var _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=uni-app:///pages/index/index.vue?vue&type=script&lang=js&?4da1");
-
-/***/ }),
-
-/***/ "E:\\翼进\\YiJin\\pages\\index\\index.vue?vue&type=style&index=0&lang=css&":
-/*!**************************************************************************!*\
-  !*** E:/翼进/YiJin/pages/index/index.vue?vue&type=style&index=0&lang=css& ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!./node_modules/css-loader??ref--6-oneOf-1-2!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=style&index=0&lang=css& */ \"./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!E:\\\\翼进\\\\YiJin\\\\pages\\\\index\\\\index.vue?vue&type=style&index=0&lang=css&\");\n/* harmony import */ var _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/index/index.vue?vue&type=style&index=0&lang=css&");
 
 /***/ }),
 
@@ -2117,7 +2085,7 @@ define('pages/register/register.js',function(require, module, exports, window, d
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-icon.vue */ \"E:\\\\翼进\\\\YiJin\\\\components\\\\uni-icon.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n{\n  data: function data() {\n    return {\n      array: ['学生', '老师', '管理员', '角色x'], //注册角色\n      index: 0,\n      registerPhone: '',\n      registerName: '',\n      registerPassword: '',\n      confirmPassword: '',\n      registerCode: '',\n      smsbtn: { //发送验证码按钮状态\n        text: '发送',\n        status: false,\n        codeTime: 60 },\n\n      timerId: null,\n      message: '' };\n\n  },\n  components: {\n    uniIcon: _uniIcon.default },\n\n  onLoad: function onLoad() {\n  },\n  methods: {\n    bindPickerChange: function bindPickerChange(e) {//角色选择\n      console.log('picker发送选择改变，携带值为：' + e.target.value);\n      this.index = e.target.value;\n    },\n    getsmscode: function getsmscode() {var _this = this;\n      //发送验证码函数\n      if (this.smsbtn.codeTime != 60) {\n        return;\n      }\n      this.timerId = setInterval(function () {//发送验证码的定时器\n        var codeTime = _this.smsbtn.codeTime;\n        codeTime--;\n        _this.smsbtn.codeTime = codeTime;\n        _this.smsbtn.text = codeTime + \"S\";\n        if (codeTime < 1) {\n          clearInterval(_this.timerId);\n          _this.smsbtn.text = \"重试\";\n          _this.smsbtn.codeTime = 60;\n          _this.smsbtn.status = false;\n        }\n      },\n      1000);\n      return false;\n    },\n    goRegister: function goRegister() {var _this2 = this; //注册函数\n      var registerPhone = this.registerPhone;\n      var registerName = this.registerName;\n      var registerPassword = this.registerPassword;\n      var confirmPassword = this.confirmPassword;\n      var registerCode = this.registerCode;\n      if (!/^1(3|4|5|6|7|8|9)\\d{9}$/.test(registerPhone)) {\n        this.message = \"手机号码有误，请重填\";\n        return false;\n      }\n      if (registerCode < 100000) {\n        this.message = \"验证码不符合格式\";\n        return false;\n      }\n      if (!registerName) {\n        this.message = \"用户名为空\";\n        return false;\n      }\n      if (!registerPassword) {\n        this.message = \"密码为空\";\n        return false;\n      }\n      var ls = 0;\n      if (registerPassword.match(/([a-z])+/)) {\n        ls++;\n      }\n      if (registerPassword.match(/([0-9])+/)) {\n        ls++;\n      }\n      if (registerPassword.match(/([A-Z])+/)) {\n        ls++;\n      }\n      if (registerPassword.match(/[^a-zA-Z0-9]+/)) {\n        ls++;\n      }\n      if (registerPassword.length < 8) {\n        ls = 0;\n      }\n      if (ls < 2) {\n        this.message = \"密码强度不够，至少8位，大写、小写、字母、符号 其中两种\";\n        return false;\n      }\n      if (confirmPassword != registerPassword) {\n        this.message = \"两次密码不同\";\n        return false;\n      }\n      uni.showLoading({\n        title: '加载中。。。',\n        mask: false });\n\n\n      var headers = {};\n      headers['content-type'] = 'application/x-www-form-urlencoded; charset=UTF-8';\n      var PHPSESSID = uni.getStorageSync('PHPSESSID');\n      if (PHPSESSID) {\n        headers['cookie'] = 'PHPSESSID=' + PHPSESSID; //将PHPSESSID放入请求头中,如你有其他cookies都可以缀后面，分号分割。浏览器端本身就有cookies机制，不设置\n      }\n      uni.request({\n        url: this.$url + '',\n        method: 'POST',\n        header: headers,\n        data: {\n          phone: this.registerPhone, //phone应该以后台验证码接收到的为phone，否则会造成修改后任意手机号注册漏洞\n          pw: this.registerPassword,\n          code: this.registerCode //验证码\n        },\n        success: function success(res) {\n          console.log(res);\n          var cookies = res.cookies;\n          if (cookies) {\n            for (var i = 0; i < cookies.length; i++) {\n              if (cookies[i].name == 'PHPSESSID') {//PHPSESSID从cookies取出，放入本地储存\n                uni.setStorageSync('PHPSESSID', cookies[i].value);\n                break;\n              }\n            }\n          }\n          //返回的基本信息做本地缓存\n          var data = res.data;\n          if (data.ec === 0) {\n            uni.setStorageSync('userinfo', data.user);\n            uni.hideLoading();\n            uni.reLaunch({\n              url: '../index/indexme' });\n\n          } else {\n            uni.removeStorageSync('userinfo');\n            _this2.message = data.msg;\n            uni.hideLoading();\n          }\n        },\n        fail: function fail() {\n          uni.hideLoading();\n          _this2.message = \"网络连接失败\";\n        },\n        complete: function complete() {} });\n\n    },\n    openAgreement: function openAgreement() {//用户协议\n      uni.navigateTo({\n        url: '../../store/new_file.html',\n        success: function success(res) {},\n        fail: function fail() {},\n        complete: function complete() {} });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/register/register.vue?vue&type=script&lang=js&?0d66");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-icon.vue */ \"E:\\\\翼进\\\\YiJin\\\\components\\\\uni-icon.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n{\n  data: function data() {\n    return {\n      array: ['学生', '老师', '管理员', '角色x'], //注册角色\n      index: 0,\n      registerPhone: '',\n      registerName: '',\n      registerPassword: '',\n      confirmPassword: '',\n      registerCode: '',\n      registerRole: '',\n      smsbtn: { //发送验证码按钮状态\n        text: '发送',\n        status: false,\n        codeTime: 60 },\n\n      timerId: null,\n      message: '' };\n\n  },\n  components: {\n    uniIcon: _uniIcon.default },\n\n  onLoad: function onLoad() {\n  },\n  methods: {\n    bindPickerChange: function bindPickerChange(e) {//角色选择\n      console.log('picker发送选择改变，携带值为：' + e.target.value);\n      this.index = e.target.value;\n    },\n    getsmscode: function getsmscode() {var _this = this;\n      //发送验证码函数\n      if (this.smsbtn.codeTime != 60) {\n        return;\n      }\n      this.timerId = setInterval(function () {//发送验证码的定时器\n        var codeTime = _this.smsbtn.codeTime;\n        codeTime--;\n        _this.smsbtn.codeTime = codeTime;\n        _this.smsbtn.text = codeTime + \"S\";\n        if (codeTime < 1) {\n          clearInterval(_this.timerId);\n          _this.smsbtn.text = \"重试\";\n          _this.smsbtn.codeTime = 60;\n          _this.smsbtn.status = false;\n        }\n      },\n      1000);\n      return false;\n    },\n    goRegister: function goRegister() {var _this2 = this; //注册函数\n      var registerPhone = this.registerPhone;\n      var registerName = this.registerName;\n      var registerPassword = this.registerPassword;\n      var confirmPassword = this.confirmPassword;\n      var registerCode = this.registerCode;\n      var registerRole = this.registerRole;\n      if (!/^1(3|4|5|6|7|8|9)\\d{9}$/.test(registerPhone)) {\n        this.message = \"手机号码有误，请重填\";\n        return false;\n      }\n      if (registerCode < 100000) {\n        this.message = \"验证码不符合格式\";\n        return false;\n      }\n      if (!registerName) {\n        this.message = \"用户名为空\";\n        return false;\n      }\n      if (!registerPassword) {\n        this.message = \"密码为空\";\n        return false;\n      }\n      var ls = 0;\n      if (registerPassword.match(/([a-z])+/)) {\n        ls++;\n      }\n      if (registerPassword.match(/([0-9])+/)) {\n        ls++;\n      }\n      if (registerPassword.match(/([A-Z])+/)) {\n        ls++;\n      }\n      if (registerPassword.match(/[^a-zA-Z0-9]+/)) {\n        ls++;\n      }\n      if (registerPassword.length < 8) {\n        ls = 0;\n      }\n      if (ls < 2) {\n        this.message = \"密码强度不够，至少8位，大写、小写、字母、符号 其中两种\";\n        return false;\n      }\n      if (confirmPassword != registerPassword) {\n        this.message = \"两次密码不同\";\n        return false;\n      }\n      uni.request({\n        url: 'http://yijint.top:8089/register',\n        method: 'POST',\n        data: {\n          phnoe: this.registerPhone, //phone应该以后台验证码接收到的为phone，否则会造成修改后任意手机号注册漏洞\n          password: this.registerPassword,\n          username: this.registerName,\n          rolename: this.registerRole },\n\n        success: function success(res) {\n          console.log(res);\n          console.log(thi.index);\n          uni.redirectTo({\n            url: '../login/login' });\n\n        },\n        fail: function fail() {\n          uni.hideLoading();\n          _this2.message = \"网络连接失败\";\n        },\n        complete: function complete() {} });\n\n    },\n    openAgreement: function openAgreement() {//用户协议\n      uni.navigateTo({\n        url: '../../store/new_file.html',\n        success: function success(res) {},\n        fail: function fail() {},\n        complete: function complete() {} });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/register/register.vue?vue&type=script&lang=js&?0d66");
 
 /***/ }),
 
@@ -2140,7 +2108,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=E:/%E7%BF%BC%E8%B
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", [\n    _c(\"view\", { staticClass: \"inputArea\" }, [\n      _c(\n        \"view\",\n        { staticClass: \"registerRole\" },\n        [\n          _c(\"text\", { staticStyle: { \"margin-right\": \"20rpx\" } }, [\n            _vm._v(\"选择注册的角色\")\n          ]),\n          _c(\n            \"picker\",\n            {\n              attrs: {\n                value: _vm.index,\n                range: _vm.array,\n                eventid: \"cd81f23c-0\"\n              },\n              on: { change: _vm.bindPickerChange }\n            },\n            [_c(\"text\", [_vm._v(_vm._s(_vm.array[_vm.index]))])]\n          )\n        ],\n        1\n      )\n    ]),\n    _c(\"view\", { staticClass: \"inputArea\" }, [\n      _c(\"input\", {\n        directives: [\n          {\n            name: \"model\",\n            rawName: \"v-model\",\n            value: _vm.registerPhone,\n            expression: \"registerPhone\"\n          }\n        ],\n        staticClass: \"inputClass\",\n        attrs: {\n          placeholder: \"请输入手机号(国内)\",\n          type: \"number\",\n          maxlength: \"11\",\n          eventid: \"cd81f23c-1\"\n        },\n        domProps: { value: _vm.registerPhone },\n        on: {\n          input: function($event) {\n            if ($event.target.composing) {\n              return\n            }\n            _vm.registerPhone = $event.target.value\n          }\n        }\n      })\n    ]),\n    _c(\"view\", { staticClass: \"inputArea\" }, [\n      _c(\"view\", { staticStyle: { display: \"flex\" } }, [\n        _c(\"input\", {\n          directives: [\n            {\n              name: \"model\",\n              rawName: \"v-model\",\n              value: _vm.registerCode,\n              expression: \"registerCode\"\n            }\n          ],\n          staticClass: \"inputClass\",\n          staticStyle: { flex: \"4\", \"border-radius\": \"22px 0 0 22px\" },\n          attrs: {\n            type: \"number\",\n            maxlength: \"6\",\n            placeholder: \"短信验证码\",\n            eventid: \"cd81f23c-2\"\n          },\n          domProps: { value: _vm.registerCode },\n          on: {\n            input: function($event) {\n              if ($event.target.composing) {\n                return\n              }\n              _vm.registerCode = $event.target.value\n            }\n          }\n        }),\n        _c(\n          \"view\",\n          {\n            staticClass: \"inputClass getCAPTCHA\",\n            attrs: { eventid: \"cd81f23c-3\" },\n            on: { click: _vm.getsmscode }\n          },\n          [_vm._v(_vm._s(_vm.smsbtn.text))]\n        )\n      ])\n    ]),\n    _c(\"view\", { staticClass: \"inputArea\" }, [\n      _c(\"input\", {\n        directives: [\n          {\n            name: \"model\",\n            rawName: \"v-model\",\n            value: _vm.registerName,\n            expression: \"registerName\"\n          }\n        ],\n        staticClass: \"inputClass\",\n        attrs: {\n          placeholder: \"输入用户名\",\n          type: \"text\",\n          eventid: \"cd81f23c-4\"\n        },\n        domProps: { value: _vm.registerName },\n        on: {\n          input: function($event) {\n            if ($event.target.composing) {\n              return\n            }\n            _vm.registerName = $event.target.value\n          }\n        }\n      })\n    ]),\n    _c(\"view\", { staticClass: \"inputArea\" }, [\n      _c(\"input\", {\n        directives: [\n          {\n            name: \"model\",\n            rawName: \"v-model\",\n            value: _vm.registerPassword,\n            expression: \"registerPassword\"\n          }\n        ],\n        staticClass: \"inputClass\",\n        attrs: {\n          placeholder: \"密码(至少符号数字大小写两种)\",\n          type: \"password\",\n          eventid: \"cd81f23c-5\"\n        },\n        domProps: { value: _vm.registerPassword },\n        on: {\n          input: function($event) {\n            if ($event.target.composing) {\n              return\n            }\n            _vm.registerPassword = $event.target.value\n          }\n        }\n      })\n    ]),\n    _c(\"view\", { staticClass: \"inputArea\" }, [\n      _c(\"input\", {\n        directives: [\n          {\n            name: \"model\",\n            rawName: \"v-model\",\n            value: _vm.confirmPassword,\n            expression: \"confirmPassword\"\n          }\n        ],\n        staticClass: \"inputClass\",\n        attrs: {\n          placeholder: \"确认登录密码\",\n          type: \"password\",\n          eventid: \"cd81f23c-6\"\n        },\n        domProps: { value: _vm.confirmPassword },\n        on: {\n          input: function($event) {\n            if ($event.target.composing) {\n              return\n            }\n            _vm.confirmPassword = $event.target.value\n          }\n        }\n      })\n    ]),\n    _c(\"view\", { staticStyle: { padding: \"0 10%\" } }, [\n      _c(\"text\", { staticStyle: { color: \"red\" } }, [\n        _vm._v(_vm._s(_vm.message))\n      ])\n    ]),\n    _c(\n      \"view\",\n      { staticClass: \"inputArea\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticStyle: { \"border-radius\": \"22px\" },\n            attrs: { type: \"primary\", eventid: \"cd81f23c-7\" },\n            on: { click: _vm.goRegister }\n          },\n          [_vm._v(\"注 册\")]\n        )\n      ],\n      1\n    ),\n    _c(\"view\", { staticClass: \"inputArea\" }, [\n      _c(\n        \"text\",\n        {\n          staticStyle: { float: \"right\", color: \"blue\" },\n          attrs: { eventid: \"cd81f23c-8\" },\n          on: { click: _vm.openAgreement }\n        },\n        [_vm._v(\"《用户协议》\")]\n      )\n    ])\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/register/register.vue?vue&type=template&id=fbcec5c0&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", [\n    _c(\"view\", { staticClass: \"inputArea\" }, [\n      _c(\n        \"view\",\n        { staticClass: \"registerRole\" },\n        [\n          _c(\"text\", { staticStyle: { \"margin-right\": \"20rpx\" } }, [\n            _vm._v(\"选择注册的角色\")\n          ]),\n          _c(\n            \"picker\",\n            {\n              attrs: {\n                value: _vm.index,\n                range: _vm.array,\n                eventid: \"cd81f23c-1\"\n              },\n              on: { change: _vm.bindPickerChange }\n            },\n            [\n              _c(\n                \"text\",\n                {\n                  attrs: { eventid: \"cd81f23c-0\" },\n                  model: {\n                    value: _vm.registerRole,\n                    callback: function($$v) {\n                      _vm.registerRole = $$v\n                    },\n                    expression: \"registerRole\"\n                  }\n                },\n                [_vm._v(_vm._s(_vm.array[_vm.index]))]\n              )\n            ]\n          )\n        ],\n        1\n      )\n    ]),\n    _c(\"view\", { staticClass: \"inputArea\" }, [\n      _c(\"input\", {\n        directives: [\n          {\n            name: \"model\",\n            rawName: \"v-model\",\n            value: _vm.registerPhone,\n            expression: \"registerPhone\"\n          }\n        ],\n        staticClass: \"inputClass\",\n        attrs: {\n          placeholder: \"请输入手机号(国内)\",\n          type: \"number\",\n          maxlength: \"11\",\n          eventid: \"cd81f23c-2\"\n        },\n        domProps: { value: _vm.registerPhone },\n        on: {\n          input: function($event) {\n            if ($event.target.composing) {\n              return\n            }\n            _vm.registerPhone = $event.target.value\n          }\n        }\n      })\n    ]),\n    _c(\"view\", { staticClass: \"inputArea\" }, [\n      _c(\"view\", { staticStyle: { display: \"flex\" } }, [\n        _c(\"input\", {\n          directives: [\n            {\n              name: \"model\",\n              rawName: \"v-model\",\n              value: _vm.registerCode,\n              expression: \"registerCode\"\n            }\n          ],\n          staticClass: \"inputClass\",\n          staticStyle: { flex: \"4\", \"border-radius\": \"22px 0 0 22px\" },\n          attrs: {\n            type: \"number\",\n            maxlength: \"6\",\n            placeholder: \"短信验证码\",\n            eventid: \"cd81f23c-3\"\n          },\n          domProps: { value: _vm.registerCode },\n          on: {\n            input: function($event) {\n              if ($event.target.composing) {\n                return\n              }\n              _vm.registerCode = $event.target.value\n            }\n          }\n        }),\n        _c(\n          \"view\",\n          {\n            staticClass: \"inputClass getCAPTCHA\",\n            attrs: { eventid: \"cd81f23c-4\" },\n            on: { click: _vm.getsmscode }\n          },\n          [_vm._v(_vm._s(_vm.smsbtn.text))]\n        )\n      ])\n    ]),\n    _c(\"view\", { staticClass: \"inputArea\" }, [\n      _c(\"input\", {\n        directives: [\n          {\n            name: \"model\",\n            rawName: \"v-model\",\n            value: _vm.registerName,\n            expression: \"registerName\"\n          }\n        ],\n        staticClass: \"inputClass\",\n        attrs: {\n          placeholder: \"输入用户名\",\n          type: \"text\",\n          eventid: \"cd81f23c-5\"\n        },\n        domProps: { value: _vm.registerName },\n        on: {\n          input: function($event) {\n            if ($event.target.composing) {\n              return\n            }\n            _vm.registerName = $event.target.value\n          }\n        }\n      })\n    ]),\n    _c(\"view\", { staticClass: \"inputArea\" }, [\n      _c(\"input\", {\n        directives: [\n          {\n            name: \"model\",\n            rawName: \"v-model\",\n            value: _vm.registerPassword,\n            expression: \"registerPassword\"\n          }\n        ],\n        staticClass: \"inputClass\",\n        attrs: {\n          placeholder: \"密码(至少符号数字大小写两种)\",\n          type: \"password\",\n          eventid: \"cd81f23c-6\"\n        },\n        domProps: { value: _vm.registerPassword },\n        on: {\n          input: function($event) {\n            if ($event.target.composing) {\n              return\n            }\n            _vm.registerPassword = $event.target.value\n          }\n        }\n      })\n    ]),\n    _c(\"view\", { staticClass: \"inputArea\" }, [\n      _c(\"input\", {\n        directives: [\n          {\n            name: \"model\",\n            rawName: \"v-model\",\n            value: _vm.confirmPassword,\n            expression: \"confirmPassword\"\n          }\n        ],\n        staticClass: \"inputClass\",\n        attrs: {\n          placeholder: \"确认登录密码\",\n          type: \"password\",\n          eventid: \"cd81f23c-7\"\n        },\n        domProps: { value: _vm.confirmPassword },\n        on: {\n          input: function($event) {\n            if ($event.target.composing) {\n              return\n            }\n            _vm.confirmPassword = $event.target.value\n          }\n        }\n      })\n    ]),\n    _c(\"view\", { staticStyle: { padding: \"0 10%\" } }, [\n      _c(\"text\", { staticStyle: { color: \"red\" } }, [\n        _vm._v(_vm._s(_vm.message))\n      ])\n    ]),\n    _c(\n      \"view\",\n      { staticClass: \"inputArea\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticStyle: { \"border-radius\": \"22px\" },\n            attrs: { type: \"primary\", eventid: \"cd81f23c-8\" },\n            on: { click: _vm.goRegister }\n          },\n          [_vm._v(\"注 册\")]\n        )\n      ],\n      1\n    ),\n    _c(\"view\", { staticClass: \"inputArea\" }, [\n      _c(\n        \"text\",\n        {\n          staticStyle: { float: \"right\", color: \"blue\" },\n          attrs: { eventid: \"cd81f23c-9\" },\n          on: { click: _vm.openAgreement }\n        },\n        [_vm._v(\"《用户协议》\")]\n      )\n    ])\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/register/register.vue?vue&type=template&id=fbcec5c0&");
 
 /***/ }),
 
@@ -2207,4 +2175,84 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _D_H
 },[["E:\\翼进\\YiJin\\main.js?{\"page\":\"pages%2Fregister%2Fregister\"}","common/runtime","common/vendor"]]]);
 });
 require('pages/register/register.js');
+__wxRoute = 'pages/web-view/web-view';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/web-view/web-view.js';
+
+define('pages/web-view/web-view.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/web-view/web-view"],{
+
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!E:\\翼进\\YiJin\\pages\\web-view\\web-view.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!E:/翼进/YiJin/pages/web-view/web-view.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default =\n\n\n\n\n\n\n{\n  methods: {} };exports.default = _default;\n\n//# sourceURL=uni-app:///pages/web-view/web-view.vue?vue&type=script&lang=js&?6780");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!E:\\翼进\\YiJin\\pages\\web-view\\web-view.vue?vue&type=template&id=30ba1900&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib??vue-loader-options!E:/翼进/YiJin/pages/web-view/web-view.vue?vue&type=template&id=30ba1900& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    [\n      _c(\"web-view\", {\n        attrs: { src: \"../../hybrid/html/tt.html\", mpcomid: \"9998e57c-0\" }\n      })\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/web-view/web-view.vue?vue&type=template&id=30ba1900&");
+
+/***/ }),
+
+/***/ "E:\\翼进\\YiJin\\main.js?{\"page\":\"pages%2Fweb-view%2Fweb-view\"}":
+/*!******************************************************************!*\
+  !*** E:/翼进/YiJin/main.js?{"page":"pages%2Fweb-view%2Fweb-view"} ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__(/*! uni-pages */ \"E:\\\\翼进\\\\YiJin\\\\pages.json\");\nvar _mpvuePageFactory = _interopRequireDefault(__webpack_require__(/*! mpvue-page-factory */ \"./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue-page-factory/index.js\"));\nvar _webView = _interopRequireDefault(__webpack_require__(/*! ./pages/web-view/web-view.vue */ \"E:\\\\翼进\\\\YiJin\\\\pages\\\\web-view\\\\web-view.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}\nPage((0, _mpvuePageFactory.default)(_webView.default));\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/main.js?%7B%22page%22:%22pages%252Fweb-view%252Fweb-view%22%7D");
+
+/***/ }),
+
+/***/ "E:\\翼进\\YiJin\\pages\\web-view\\web-view.vue":
+/*!***********************************************!*\
+  !*** E:/翼进/YiJin/pages/web-view/web-view.vue ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _web_view_vue_vue_type_template_id_30ba1900___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./web-view.vue?vue&type=template&id=30ba1900& */ \"E:\\\\翼进\\\\YiJin\\\\pages\\\\web-view\\\\web-view.vue?vue&type=template&id=30ba1900&\");\n/* harmony import */ var _web_view_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./web-view.vue?vue&type=script&lang=js& */ \"E:\\\\翼进\\\\YiJin\\\\pages\\\\web-view\\\\web-view.vue?vue&type=script&lang=js&\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _web_view_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _web_view_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _web_view_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _web_view_vue_vue_type_template_id_30ba1900___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _web_view_vue_vue_type_template_id_30ba1900___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"E:/翼进/YiJin/pages/web-view/web-view.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/web-view/web-view.vue");
+
+/***/ }),
+
+/***/ "E:\\翼进\\YiJin\\pages\\web-view\\web-view.vue?vue&type=script&lang=js&":
+/*!************************************************************************!*\
+  !*** E:/翼进/YiJin/pages/web-view/web-view.vue?vue&type=script&lang=js& ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_web_view_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!./web-view.vue?vue&type=script&lang=js& */ \"./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!E:\\\\翼进\\\\YiJin\\\\pages\\\\web-view\\\\web-view.vue?vue&type=script&lang=js&\");\n/* harmony import */ var _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_web_view_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_web_view_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_web_view_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_web_view_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_web_view_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=uni-app:///pages/web-view/web-view.vue?vue&type=script&lang=js&?da78");
+
+/***/ }),
+
+/***/ "E:\\翼进\\YiJin\\pages\\web-view\\web-view.vue?vue&type=template&id=30ba1900&":
+/*!******************************************************************************!*\
+  !*** E:/翼进/YiJin/pages/web-view/web-view.vue?vue&type=template&id=30ba1900& ***!
+  \******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_web_view_vue_vue_type_template_id_30ba1900___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib??vue-loader-options!./web-view.vue?vue&type=template&id=30ba1900& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!E:\\\\翼进\\\\YiJin\\\\pages\\\\web-view\\\\web-view.vue?vue&type=template&id=30ba1900&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_web_view_vue_vue_type_template_id_30ba1900___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_D_HB_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_web_view_vue_vue_type_template_id_30ba1900___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/web-view/web-view.vue?vue&type=template&id=30ba1900&");
+
+/***/ })
+
+},[["E:\\翼进\\YiJin\\main.js?{\"page\":\"pages%2Fweb-view%2Fweb-view\"}","common/runtime","common/vendor"]]]);
+});
+require('pages/web-view/web-view.js');
 

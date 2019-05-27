@@ -49,7 +49,8 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
   data: function data() {
     return {
       name: '',
-      pwd: '' };
+      pwd: '',
+      show: true };
 
   },
   components: {
@@ -57,17 +58,17 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
 
   methods: {
     login: function login() {//登录
-      uni.redirectTo({
+      uni.navigateTo({
         url: '../index/index' });
 
     },
     test: function test() {//登录
-      uni.redirectTo({
+      uni.navigateTo({
         url: '../index/index' });
 
     },
     register: function register() {//注册
-      uni.redirectTo({
+      uni.navigateTo({
         url: '../register/register' });
 
     },
@@ -87,10 +88,10 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
         return;
       }
       uni.request({
-        url: 'http://192.168.43.99:8080/user/login', //开发者服务器接口地址
+        url: 'http://yijint.top:8089/login', //开发者服务器接口地址
         method: 'POST', //get或post
         data: { //请求的参数
-          userName: this.name,
+          username: this.name,
           password: this.pwd },
 
         success: function success(res) {
@@ -105,12 +106,16 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
           uni.hideLoading(); //隐藏 loading 提示框。
           console.log("请求失败");
           //console.log(this.name)
+          uni.showToast({ //交互反馈接口，显示消息提示框。
+            icon: 'none',
+            title: '请求失败' });
+
         },
         complete: function complete() {} });
 
     },
     gettest: function gettest() {
-      uni.redirectTo({ //登录成功页面跳转
+      uni.navigateTo({ //登录成功页面跳转
         url: '../222/222' });
 
     },
@@ -130,7 +135,7 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
 
             } });
 
-          uni.redirectTo({ //登录成功页面跳转
+          uni.navigateTo({ //登录成功页面跳转
             url: '../register/register' });
 
         },
@@ -142,7 +147,7 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
   onLoad: function onLoad() {//第一次加载
   },
   beforeUpdate: function beforeUpdate() {//数据更新时调用此生命周期函数
-    this.wx.setname(this.test);
+
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["default"]))
 
@@ -174,177 +179,181 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "view",
-    [
-      _c("image", {
-        staticClass: "logo",
-        attrs: { src: "../../static/logo.png" }
-      }),
-      _c("open-data", {
-        attrs: { type: "userNickName", mpcomid: "abb6ec54-0" }
-      }),
-      _c(
-        "view",
-        { staticClass: "login" },
-        [
+  return _c("view", [
+    _vm.show
+      ? _c("image", {
+          staticClass: "logo",
+          attrs: { src: "../../static/logo.png" }
+        })
+      : _vm._e(),
+    !_vm.show
+      ? _c("image", {
+          staticClass: "logo",
+          attrs: { src: "../../static/shuijiao.jpg" }
+        })
+      : _vm._e(),
+    _c(
+      "view",
+      { staticClass: "login" },
+      [
+        _c(
+          "view",
+          { staticClass: "login-xy" },
+          [
+            _c("uni-icon", {
+              attrs: {
+                type: "person-filled",
+                size: "30",
+                color: "black",
+                mpcomid: "abb6ec54-0"
+              }
+            }),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.name,
+                  expression: "name"
+                }
+              ],
+              staticClass: "login-txt",
+              attrs: { placeholder: "用户名", eventid: "abb6ec54-0" },
+              domProps: { value: _vm.name },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.name = $event.target.value
+                }
+              }
+            })
+          ],
+          1
+        ),
+        _c(
+          "view",
+          { staticClass: "login-xy" },
+          [
+            _c("uni-icon", {
+              attrs: {
+                type: "locked",
+                size: "28",
+                color: "black",
+                mpcomid: "abb6ec54-1"
+              }
+            }),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.pwd,
+                  expression: "pwd"
+                }
+              ],
+              staticClass: "login-txt",
+              staticStyle: { "letter-spacing": "15px" },
+              attrs: {
+                placeholder: "密码",
+                password: "",
+                eventid: "abb6ec54-1"
+              },
+              domProps: { value: _vm.pwd },
+              on: {
+                click: function($event) {
+                  _vm.show = true
+                },
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.pwd = $event.target.value
+                }
+              }
+            })
+          ],
+          1
+        ),
+        _c(
+          "button",
+          {
+            staticClass: "button",
+            attrs: { eventid: "abb6ec54-2" },
+            on: {
+              tap: function($event) {
+                _vm.goLogin()
+              }
+            }
+          },
+          [_vm._v("登录")]
+        ),
+        _c("view", { staticClass: "forgot-psd" }, [
           _c(
-            "view",
-            { staticClass: "login-xy" },
-            [
-              _c("uni-icon", {
-                attrs: {
-                  type: "person-filled",
-                  size: "30",
-                  color: "black",
-                  mpcomid: "abb6ec54-1"
+            "text",
+            {
+              attrs: { eventid: "abb6ec54-3" },
+              on: {
+                click: function($event) {
+                  _vm.test()
                 }
-              }),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.name,
-                    expression: "name"
-                  }
-                ],
-                staticClass: "login-txt",
-                attrs: { placeholder: "用户名", eventid: "abb6ec54-0" },
-                domProps: { value: _vm.name },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.name = $event.target.value
-                  }
-                }
-              })
-            ],
-            1
+              }
+            },
+            [_vm._v("忘记密码了")]
           ),
+          _c("text", { staticClass: "forgot-psd-spacing" }, [_vm._v("|")]),
+          _c(
+            "text",
+            {
+              attrs: { eventid: "abb6ec54-4" },
+              on: {
+                click: function($event) {
+                  _vm.register()
+                }
+              }
+            },
+            [_vm._v("注册账号")]
+          )
+        ]),
+        _c("view", { staticClass: "bottom" }, [
+          _c("view", [_vm._v("第三方登录")]),
           _c(
             "view",
-            { staticClass: "login-xy" },
+            { staticClass: "login-icon" },
             [
               _c("uni-icon", {
                 attrs: {
-                  type: "locked",
-                  size: "28",
+                  type: "weibo",
+                  size: "20",
                   color: "black",
                   mpcomid: "abb6ec54-2"
                 }
               }),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.pwd,
-                    expression: "pwd"
-                  }
-                ],
-                staticClass: "login-txt",
-                staticStyle: { "letter-spacing": "15px" },
+              _c("uni-icon", {
                 attrs: {
-                  placeholder: "密码",
-                  password: "",
-                  eventid: "abb6ec54-1"
-                },
-                domProps: { value: _vm.pwd },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.pwd = $event.target.value
-                  }
+                  type: "weixin",
+                  size: "20",
+                  color: "black",
+                  mpcomid: "abb6ec54-3"
+                }
+              }),
+              _c("uni-icon", {
+                attrs: {
+                  type: "qq",
+                  size: "20",
+                  color: "black",
+                  mpcomid: "abb6ec54-4"
                 }
               })
             ],
             1
-          ),
-          _c(
-            "button",
-            {
-              staticClass: "button",
-              attrs: { eventid: "abb6ec54-2" },
-              on: {
-                tap: function($event) {
-                  _vm.goLogin()
-                }
-              }
-            },
-            [_vm._v("登录")]
-          ),
-          _c("view", { staticClass: "forgot-psd" }, [
-            _c(
-              "text",
-              {
-                attrs: { eventid: "abb6ec54-3" },
-                on: {
-                  click: function($event) {
-                    _vm.test()
-                  }
-                }
-              },
-              [_vm._v("忘记密码")]
-            ),
-            _c("text", { staticClass: "forgot-psd-spacing" }, [_vm._v("|")]),
-            _c(
-              "text",
-              {
-                attrs: { eventid: "abb6ec54-4" },
-                on: {
-                  click: function($event) {
-                    _vm.register()
-                  }
-                }
-              },
-              [_vm._v("注册账号")]
-            )
-          ]),
-          _c("view", { staticClass: "bottom" }, [
-            _c("view", [_vm._v("第三方登录")]),
-            _c(
-              "view",
-              { staticClass: "login-icon" },
-              [
-                _c("uni-icon", {
-                  attrs: {
-                    type: "weibo",
-                    size: "20",
-                    color: "black",
-                    mpcomid: "abb6ec54-3"
-                  }
-                }),
-                _c("uni-icon", {
-                  attrs: {
-                    type: "weixin",
-                    size: "20",
-                    color: "black",
-                    mpcomid: "abb6ec54-4"
-                  }
-                }),
-                _c("uni-icon", {
-                  attrs: {
-                    type: "qq",
-                    size: "20",
-                    color: "black",
-                    mpcomid: "abb6ec54-5"
-                  }
-                })
-              ],
-              1
-            )
-          ])
-        ],
-        1
-      )
-    ],
-    1
-  )
+          )
+        ])
+      ],
+      1
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true

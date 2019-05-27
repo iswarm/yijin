@@ -1,0 +1,77 @@
+.vertical{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;/**flex布局*/
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;/**flex布局方向*/
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.horizontal{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	border-bottom: solid #EEEEEE 1px;
+	width: 80%;
+	margin-left: 10%;
+	font-size: 30rpx;
+	margin-bottom: 20rpx;
+}
+.img{
+	height: 200rpx;
+	width: 200rpx;
+	margin-left: 37%;
+	margin-bottom: 50rpx;
+	padding-top: 50rpx;
+}
+.horizontal ._button{
+	background: blue;
+	color: white;
+	border-radius: 40rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+	font-size: 26rpx;
+}
+.horizontal text{
+	font-size: 35rpx;
+}
+.inputArea {
+	padding: 20rpx 10%;
+}
+.inputClass {
+	border: 2px solid #ccc;
+	border-radius: 22px;
+	outline: 0;
+	padding: 8px 15px;
+}
+.getCAPTCHA{
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+	    -ms-flex:1;
+	        flex:1;
+	border-radius:0 22px 22px 0;
+	border-left: none;
+}
+.registerRole{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	border: 2px solid #ccc;
+	border-radius: 22px;
+	outline: 0;
+	padding: 8px 15px;
+}
+

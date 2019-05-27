@@ -56,10 +56,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	position: absolute;
-	bottom: 50upx;
-	margin-left: 25%;
 	text-align: center;
+	margin-top: 25%;
 }
 .login-icon{
 	display: flex;

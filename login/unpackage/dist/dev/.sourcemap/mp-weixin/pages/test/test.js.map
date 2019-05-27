@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///E:/翼进/YiJin/main.js"],"names":["Page","App"],"mappings":";;;;;;;;;;AAAA;AACA;AACI,yM;AACAA,IAAI,CAAC,+BAAYC,aAAZ,CAAD,CAAJ,C","file":"pages/test/test.js","sourcesContent":["import 'uni-pages';\nimport pageFactory from 'mpvue-page-factory'\n    import App from './pages/test/test.vue'\n    Page(pageFactory(App))"],"sourceRoot":""}

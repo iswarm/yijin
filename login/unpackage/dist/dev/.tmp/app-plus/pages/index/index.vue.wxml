@@ -1,1 +1,1 @@
-<template name="a8a2ec30"><view class="_view a8a2ec30"><view class="_view a8a2ec30 screen">te</view></view></template>
+<template name="a8a2ec30"><view style="width:100%; background: #0000FF;" class="_view a8a2ec30"><web-view src="../../hybrid/html/paly.html" class="_web-view a8a2ec30"></web-view></view></template>

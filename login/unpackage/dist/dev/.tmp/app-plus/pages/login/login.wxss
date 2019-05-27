@@ -69,6 +69,25 @@
 	letter-spacing:8px;
 	margin-top: 20rpx;
 }
+.bottom{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	position: absolute;
+	bottom: 50rpx;
+	margin-left: 25%;
+	text-align: center;
+}
 .login-icon{
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -85,6 +104,5 @@
 	        justify-content: center;/**flex布局控件位置居中*/
 	letter-spacing:40px;
 	margin-left: 10%;
-	bottom: 0rpx;
 }
 

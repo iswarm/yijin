@@ -2,7 +2,8 @@
   "pages": [
     "pages/login/login",
     "pages/index/index",
-    "pages/register/register"
+    "pages/register/register",
+    "pages/web-view/web-view"
   ],
   "subPackages": [],
   "window": {

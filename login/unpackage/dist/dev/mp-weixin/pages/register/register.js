@@ -50,17 +50,23 @@
 
 
 
+
+
+
+
 var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-icon.vue */ "E:\\翼进\\YiJin\\components\\uni-icon.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
 {
   data: function data() {
     return {
       array: ['学生', '老师', '管理员', '角色x'], //注册角色
       index: 0,
-      registerPhone: '',
+      //registerPhone: '',
       registerName: '',
       registerPassword: '',
       confirmPassword: '',
-      registerCode: '',
+      //registerCode: '',
+      registerRole: '学生',
+      registerEmail: '',
       smsbtn: { //发送验证码按钮状态
         text: '发送',
         status: false,
@@ -79,6 +85,15 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
     bindPickerChange: function bindPickerChange(e) {//角色选择
       console.log('picker发送选择改变，携带值为：' + e.target.value);
       this.index = e.target.value;
+      if (e.target.value == 1) {
+        this.registerRole = '老师';
+        console.log(this.registerRole);
+      }
+      if (e.target.value == 2) {
+        this.registerRole = '管理员';
+        console.log(this.registerRole);
+      }
+
     },
     getsmscode: function getsmscode() {var _this = this;
       //发送验证码函数
@@ -101,19 +116,20 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
       return false;
     },
     goRegister: function goRegister() {var _this2 = this; //注册函数
-      var registerPhone = this.registerPhone;
+      //let registerPhone = this.registerPhone;
       var registerName = this.registerName;
       var registerPassword = this.registerPassword;
       var confirmPassword = this.confirmPassword;
-      var registerCode = this.registerCode;
-      if (!/^1(3|4|5|6|7|8|9)\d{9}$/.test(registerPhone)) {
-        this.message = "手机号码有误，请重填";
-        return false;
-      }
-      if (registerCode < 100000) {
-        this.message = "验证码不符合格式";
-        return false;
-      }
+      //let registerCode = this.registerCode;
+      var registerRole = this.registerRole;
+      /* if (!(/^1(3|4|5|6|7|8|9)\d{9}$/.test(registerPhone))) {
+                                            	this.message = "手机号码有误，请重填";
+                                            	return false;
+                                            }
+                                            if (registerCode < 100000) {
+                                            	this.message = "验证码不符合格式";
+                                            	return false;
+                                            } */
       if (!registerName) {
         this.message = "用户名为空";
         return false;
@@ -122,74 +138,45 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
         this.message = "密码为空";
         return false;
       }
-      var ls = 0;
-      if (registerPassword.match(/([a-z])+/)) {
-        ls++;
-      }
-      if (registerPassword.match(/([0-9])+/)) {
-        ls++;
-      }
-      if (registerPassword.match(/([A-Z])+/)) {
-        ls++;
-      }
-      if (registerPassword.match(/[^a-zA-Z0-9]+/)) {
-        ls++;
-      }
-      if (registerPassword.length < 8) {
-        ls = 0;
-      }
-      if (ls < 2) {
-        this.message = "密码强度不够，至少8位，大写、小写、字母、符号 其中两种";
-        return false;
-      }
+      /* let ls = 0;
+        if (registerPassword.match(/([a-z])+/)) {
+        	ls++;
+        }
+        if (registerPassword.match(/([0-9])+/)) {
+        	ls++;
+        }
+        if (registerPassword.match(/([A-Z])+/)) {
+        	ls++;
+        }
+        if (registerPassword.match(/[^a-zA-Z0-9]+/)) {
+        	ls++;
+        }
+        if (registerPassword.length < 8) {
+        	ls = 0;
+        }
+        if (ls < 2) {
+        	this.message = "密码强度不够，至少8位，大写、小写、字母、符号 其中两种";
+        	return false;
+        } */
       if (confirmPassword != registerPassword) {
         this.message = "两次密码不同";
         return false;
       }
-      uni.showLoading({
-        title: '加载中。。。',
-        mask: false });
-
-
-      var headers = {};
-      headers['content-type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
-      var PHPSESSID = uni.getStorageSync('PHPSESSID');
-      if (PHPSESSID) {
-        headers['cookie'] = 'PHPSESSID=' + PHPSESSID; //将PHPSESSID放入请求头中,如你有其他cookies都可以缀后面，分号分割。浏览器端本身就有cookies机制，不设置
-      }
       uni.request({
-        url: this.$url + '',
+        url: 'http://yijint.top:8089/register',
         method: 'POST',
-        header: headers,
         data: {
-          phone: this.registerPhone, //phone应该以后台验证码接收到的为phone，否则会造成修改后任意手机号注册漏洞
-          pw: this.registerPassword,
-          code: this.registerCode //验证码
-        },
+          //phone应该以后台验证码接收到的为phone，否则会造成修改后任意手机号注册漏洞
+          username: this.registerName,
+          password: this.registerPassword,
+          email: this.registerEmail,
+          rolename: this.registerRole },
+
         success: function success(res) {
           console.log(res);
-          var cookies = res.cookies;
-          if (cookies) {
-            for (var i = 0; i < cookies.length; i++) {
-              if (cookies[i].name == 'PHPSESSID') {//PHPSESSID从cookies取出，放入本地储存
-                uni.setStorageSync('PHPSESSID', cookies[i].value);
-                break;
-              }
-            }
-          }
-          //返回的基本信息做本地缓存
-          var data = res.data;
-          if (data.ec === 0) {
-            uni.setStorageSync('userinfo', data.user);
-            uni.hideLoading();
-            uni.reLaunch({
-              url: '../index/indexme' });
+          uni.redirectTo({
+            url: '../login/login' });
 
-          } else {
-            uni.removeStorageSync('userinfo');
-            _this2.message = data.msg;
-            uni.hideLoading();
-          }
         },
         fail: function fail() {
           uni.hideLoading();
@@ -251,83 +238,30 @@ var render = function() {
               attrs: {
                 value: _vm.index,
                 range: _vm.array,
-                eventid: "cd81f23c-0"
+                eventid: "cd81f23c-1"
               },
               on: { change: _vm.bindPickerChange }
             },
-            [_c("text", [_vm._v(_vm._s(_vm.array[_vm.index]))])]
+            [
+              _c(
+                "text",
+                {
+                  attrs: { eventid: "cd81f23c-0" },
+                  model: {
+                    value: _vm.registerRole,
+                    callback: function($$v) {
+                      _vm.registerRole = $$v
+                    },
+                    expression: "registerRole"
+                  }
+                },
+                [_vm._v(_vm._s(_vm.array[_vm.index]))]
+              )
+            ]
           )
         ],
         1
       )
-    ]),
-    _c("view", { staticClass: "inputArea" }, [
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.registerPhone,
-            expression: "registerPhone"
-          }
-        ],
-        staticClass: "inputClass",
-        attrs: {
-          placeholder: "请输入手机号(国内)",
-          type: "number",
-          maxlength: "11",
-          eventid: "cd81f23c-1"
-        },
-        domProps: { value: _vm.registerPhone },
-        on: {
-          input: function($event) {
-            if ($event.target.composing) {
-              return
-            }
-            _vm.registerPhone = $event.target.value
-          }
-        }
-      })
-    ]),
-    _c("view", { staticClass: "inputArea" }, [
-      _c("view", { staticStyle: { display: "flex" } }, [
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.registerCode,
-              expression: "registerCode"
-            }
-          ],
-          staticClass: "inputClass",
-          staticStyle: { flex: "4", "border-radius": "22px 0 0 22px" },
-          attrs: {
-            type: "number",
-            maxlength: "6",
-            placeholder: "短信验证码",
-            eventid: "cd81f23c-2"
-          },
-          domProps: { value: _vm.registerCode },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.registerCode = $event.target.value
-            }
-          }
-        }),
-        _c(
-          "view",
-          {
-            staticClass: "inputClass getCAPTCHA",
-            attrs: { eventid: "cd81f23c-3" },
-            on: { click: _vm.getsmscode }
-          },
-          [_vm._v(_vm._s(_vm.smsbtn.text))]
-        )
-      ])
     ]),
     _c("view", { staticClass: "inputArea" }, [
       _c("input", {
@@ -343,7 +277,7 @@ var render = function() {
         attrs: {
           placeholder: "输入用户名",
           type: "text",
-          eventid: "cd81f23c-4"
+          eventid: "cd81f23c-2"
         },
         domProps: { value: _vm.registerName },
         on: {
@@ -370,7 +304,7 @@ var render = function() {
         attrs: {
           placeholder: "密码(至少符号数字大小写两种)",
           type: "password",
-          eventid: "cd81f23c-5"
+          eventid: "cd81f23c-3"
         },
         domProps: { value: _vm.registerPassword },
         on: {
@@ -397,7 +331,7 @@ var render = function() {
         attrs: {
           placeholder: "确认登录密码",
           type: "password",
-          eventid: "cd81f23c-6"
+          eventid: "cd81f23c-4"
         },
         domProps: { value: _vm.confirmPassword },
         on: {
@@ -406,6 +340,29 @@ var render = function() {
               return
             }
             _vm.confirmPassword = $event.target.value
+          }
+        }
+      })
+    ]),
+    _c("view", { staticClass: "inputArea" }, [
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.registerEmail,
+            expression: "registerEmail"
+          }
+        ],
+        staticClass: "inputClass",
+        attrs: { placeholder: "电子邮件", type: "text", eventid: "cd81f23c-5" },
+        domProps: { value: _vm.registerEmail },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.registerEmail = $event.target.value
           }
         }
       })
@@ -423,7 +380,7 @@ var render = function() {
           "button",
           {
             staticStyle: { "border-radius": "22px" },
-            attrs: { type: "primary", eventid: "cd81f23c-7" },
+            attrs: { type: "primary", eventid: "cd81f23c-6" },
             on: { click: _vm.goRegister }
           },
           [_vm._v("注 册")]
@@ -436,7 +393,7 @@ var render = function() {
         "text",
         {
           staticStyle: { float: "right", color: "blue" },
-          attrs: { eventid: "cd81f23c-8" },
+          attrs: { eventid: "cd81f23c-7" },
           on: { click: _vm.openAgreement }
         },
         [_vm._v("《用户协议》")]
