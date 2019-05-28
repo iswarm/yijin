@@ -112,6 +112,7 @@
 				let confirmPassword = this.confirmPassword;
 				//let registerCode = this.registerCode;
 				let registerRole=this.registerRole;
+				let registerEmail=this.registerEmail
 				/* if (!(/^1(3|4|5|6|7|8|9)\d{9}$/.test(registerPhone))) {
 					this.message = "手机号码有误，请重填";
 					return false;
@@ -128,7 +129,9 @@
 					this.message = "密码为空";
 					return false;
 				}
-				/* let ls = 0;
+				 
+				//密码格式验证
+				let ls = 0;
 				if (registerPassword.match(/([a-z])+/)) {
 					ls++;
 				}
@@ -147,11 +150,34 @@
 				if (ls < 2) {
 					this.message = "密码强度不够，至少8位，大写、小写、字母、符号 其中两种";
 					return false;
-				} */
+				}
 				if (confirmPassword != registerPassword) {
 					this.message = "两次密码不同";
 					return false;
 				}
+				
+				//邮箱格式验证
+				if(registerEmail == null || registerEmail.length < 2){
+                    this.message='邮箱格式不正确，请重新输入！';
+                    return false;
+                }
+                //需要出现'@',且不是首字符.
+                var aPos = registerEmail.indexOf("@" ,1) ;
+                if(aPos < 0){
+                    this.message='邮箱格式不正确，请重新输入！';
+                    return false ;
+                }
+                // '@'后出现'.',且不紧跟其后.
+                if(registerEmail.indexOf("." ,aPos+2) < 0){
+                    this.message='邮箱格式不正确，请重新输入！';
+                    return false ;
+                }
+                //判断'.'是否为最后一个字符
+                if(registerEmail.indexOf('.')==registerEmail.length-1){
+                    this.message='邮箱格式不正确，请重新输入！';
+                    return false ;
+                }
+				
 				uni.request({
 					url: 'http://yijint.top:8089/register',
 					method: 'POST',
@@ -164,8 +190,17 @@
 					},
 					success: res => {
 						console.log(res)
-						uni.redirectTo({
-							url:'../login/login'
+						uni.showModal({
+							content: "注册成功",
+							confirmText: "确定",
+							cancelText: "",
+							success: function (res) {
+								if (res.confirm) {
+									uni.redirectTo({
+										url:'../login/login'
+									})
+								}
+							}
 						})
 					},
 					fail: () => {

@@ -1,6 +1,11 @@
 <template>
-	<view style="width:100%; background: #0000FF;">
+	<view>
+		<!--
 		<web-view src="../../hybrid/html/paly.html"></web-view>
+		
+		<view><image :src="img"></image></view>-->
+		
+		<text>{{name}}</text>登录成功
 	</view>
 </template>
 
@@ -8,12 +13,16 @@
 	export default {
 		data() {
 			return {
+				name:uni.getStorageSync('name'),
+				//uni.getStorageSync('storage_key')
+				img:'../../static/logo.png'
 			}
 		},
 		components: {
 			
 		},
 		onLoad() {
+			
 		},
 		methods: {
 		}

@@ -8,7 +8,12 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
+
+
+
+
+
 
 
 
@@ -17,15 +22,20 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 {
   data: function data() {
-    return {};
+    return {
+      name: uni.getStorageSync('name'),
+      //uni.getStorageSync('storage_key')
+      img: '../../static/logo.png' };
 
   },
   components: {},
 
 
   onLoad: function onLoad() {
+
   },
   methods: {} };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["default"]))
 
 /***/ }),
 
@@ -44,16 +54,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "view",
-    { staticStyle: { width: "100%", background: "#0000FF" } },
-    [
-      _c("web-view", {
-        attrs: { src: "../../hybrid/html/paly.html", mpcomid: "a8a2ec30-0" }
-      })
-    ],
-    1
-  )
+  return _c("view", [
+    _c("text", [_vm._v(_vm._s(_vm.name))]),
+    _vm._v("登录成功")
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true

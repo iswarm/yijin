@@ -47,6 +47,7 @@
 	color: #333333;
 	font-size: 35rpx;
 	border-left:2px solid #BDBDBD;
+	padding-left: 20rpx;
 }
 .forgot-psd{
 	color: black;
@@ -83,10 +84,8 @@
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	position: absolute;
-	bottom: 50rpx;
-	margin-left: 25%;
 	text-align: center;
+	margin-top: 25%;
 }
 .login-icon{
 	display: -webkit-box;

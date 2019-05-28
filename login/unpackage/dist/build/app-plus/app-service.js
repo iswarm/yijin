@@ -1102,20 +1102,26 @@ Z(z[7])
 Z([3,'28'])
 Z([3,'locked'])
 Z([3,'_view abb6ec54 login-icon'])
+Z([3,'handleProxy'])
 Z(z[5])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'abb6ec54-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[7],[3,'$k']])
+Z([1,'abb6ec54-5'])
 Z(z[7])
 Z([3,'20'])
 Z([3,'weibo'])
+Z(z[16])
 Z(z[5])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'abb6ec54-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[7])
 Z(z[19])
+Z([1,'abb6ec54-6'])
+Z(z[7])
+Z(z[22])
 Z([3,'weixin'])
 Z(z[5])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'abb6ec54-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[7])
-Z(z[19])
+Z(z[22])
 Z([3,'qq'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_5);return __WXML_GLOBAL__.ops_cached.$gwx_5
 }
@@ -1142,26 +1148,11 @@ Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'cd81f23c'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_8);return __WXML_GLOBAL__.ops_cached.$gwx_8
 }
-function gz$gwx_9(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_9)return __WXML_GLOBAL__.ops_cached.$gwx_9
-__WXML_GLOBAL__.ops_cached.$gwx_9=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'9998e57c'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_9);return __WXML_GLOBAL__.ops_cached.$gwx_9
-}
-function gz$gwx_10(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
-__WXML_GLOBAL__.ops_cached.$gwx_10=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'9998e57c'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
-}
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/uni-icon.vue.wxml','./components/uni-icon.vue.wxml','./pages/index/index.vue.wxml','./pages/index/index.wxml','./index.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/register/register.vue.wxml','./pages/register/register.wxml','./register.vue.wxml','./pages/web-view/web-view.vue.wxml','./pages/web-view/web-view.wxml','./web-view.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','/components/uni-icon.vue.wxml','./components/uni-icon.vue.wxml','./pages/index/index.vue.wxml','./pages/index/index.wxml','./index.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/register/register.vue.wxml','./pages/register/register.wxml','./register.vue.wxml'];d_[x[0]]={}
 var m0=function(e,s,r,gg){
 var z=gz$gwx_1()
 var oB=e_[x[0]].i
@@ -1278,7 +1269,7 @@ else _w(hG,x[6],1,474)
 cs.pop()
 var oJ=_v()
 _(fE,oJ)
-cs.push("./pages/login/login.vue.wxml:template:1:703")
+cs.push("./pages/login/login.vue.wxml:template:1:726")
 var lK=_oz(z,12,e,s,gg)
 var aL=_gd(x[6],lK,e_,d_)
 if(aL){
@@ -1288,52 +1279,52 @@ oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[6],1,812)
+else _w(lK,x[6],1,835)
 cs.pop()
-cs.push("./pages/login/login.vue.wxml:view:1:1625")
+cs.push("./pages/login/login.vue.wxml:view:1:1648")
 var eN=_n('view')
 _rz(z,eN,'class',15,e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./pages/login/login.vue.wxml:template:1:1665")
-var oP=_oz(z,18,e,s,gg)
+cs.push("./pages/login/login.vue.wxml:template:1:1688")
+var oP=_oz(z,21,e,s,gg)
 var xQ=_gd(x[6],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,17,e,s,gg) || {}
+var oR=_1z(z,18,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[6],1,1773)
+else _w(oP,x[6],1,1871)
 cs.pop()
 var fS=_v()
 _(eN,fS)
-cs.push("./pages/login/login.vue.wxml:template:1:1796")
-var cT=_oz(z,23,e,s,gg)
+cs.push("./pages/login/login.vue.wxml:template:1:1894")
+var cT=_oz(z,29,e,s,gg)
 var hU=_gd(x[6],cT,e_,d_)
 if(hU){
-var oV=_1z(z,22,e,s,gg) || {}
+var oV=_1z(z,26,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[6],1,1905)
+else _w(cT,x[6],1,2078)
 cs.pop()
 var cW=_v()
 _(eN,cW)
-cs.push("./pages/login/login.vue.wxml:template:1:1928")
-var oX=_oz(z,28,e,s,gg)
+cs.push("./pages/login/login.vue.wxml:template:1:2101")
+var oX=_oz(z,34,e,s,gg)
 var lY=_gd(x[6],oX,e_,d_)
 if(lY){
-var aZ=_1z(z,27,e,s,gg) || {}
+var aZ=_1z(z,33,e,s,gg) || {}
 var cur_globalf=gg.f
 cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
 gg.f=cur_globalf
 }
-else _w(oX,x[6],1,2033)
+else _w(oX,x[6],1,2206)
 cs.pop()
 cs.pop()
 _(fE,eN)
@@ -1425,50 +1416,6 @@ hU.pop()
 return r
 }
 e_[x[10]]={f:m7,j:[],i:[],ti:[x[11]],ic:[]}
-d_[x[12]]={}
-d_[x[12]]["9998e57c"]=function(e,s,r,gg){
-var z=gz$gwx_9()
-var b=x[12]+':9998e57c'
-r.wxVkey=b
-gg.f=$gdc(f_["./pages/web-view/web-view.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[12]);return}
-p_[b]=true
-try{
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-var m8=function(e,s,r,gg){
-var z=gz$gwx_9()
-return r
-}
-e_[x[12]]={f:m8,j:[],i:[],ti:[],ic:[]}
-d_[x[13]]={}
-var m9=function(e,s,r,gg){
-var z=gz$gwx_10()
-var e2=e_[x[13]].i
-_ai(e2,x[14],e_,x[13],1,1)
-var b3=_v()
-_(r,b3)
-cs.push("./pages/web-view/web-view.wxml:template:2:6")
-var o4=_oz(z,1,e,s,gg)
-var x5=_gd(x[13],o4,e_,d_)
-if(x5){
-var o6=_1z(z,0,e,s,gg) || {}
-var cur_globalf=gg.f
-b3.wxXCkey=3
-x5(o6,o6,b3,gg)
-gg.f=cur_globalf
-}
-else _w(o4,x[13],2,18)
-cs.pop()
-e2.pop()
-return r
-}
-e_[x[13]]={f:m9,j:[],i:[],ti:[x[14]],ic:[]}
 if(path&&e_[path]){
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
 var main=e_[path].f
@@ -1489,7 +1436,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/login/login","pages/index/index","pages/register/register","pages/web-view/web-view"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"},"usingComponents":{},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"YiJin"};
+__wxAppCode__['app.json']={"pages":["pages/login/login","pages/index/index","pages/register/register"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"},"usingComponents":{},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"YiJin"};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 
@@ -1515,25 +1462,19 @@ require('app.js');
 __wxRoute = 'pages/login/login';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/login/login.js';
 
 define('pages/login/login.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/login/login"],{"1f51":function(t,e,n){"use strict";n.r(e);var i=n("88c5"),o=n("be9d");for(var a in o)"default"!==a&&function(t){n.d(e,t,function(){return o[t]})}(a);n("f48b");var s=n("2877"),c=Object(s["a"])(o["default"],i["a"],i["b"],!1,null,null,null);e["default"]=c.exports},"215a":function(t,e,n){"use strict";n("fcac");var i=a(n("b0ce")),o=a(n("1f51"));function a(t){return t&&t.__esModule?t:{default:t}}Page((0,i.default)(o.default))},"88c5":function(t,e,n){"use strict";var i=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("view",[t.show?n("image",{staticClass:"logo",attrs:{src:"../../static/logo.png"}}):t._e(),t.show?t._e():n("image",{staticClass:"logo",attrs:{src:"../../static/shuijiao.jpg"}}),n("view",{staticClass:"login"},[n("view",{staticClass:"login-xy"},[n("uni-icon",{attrs:{type:"person-filled",size:"30",color:"black",mpcomid:"abb6ec54-0"}}),n("input",{directives:[{name:"model",rawName:"v-model",value:t.name,expression:"name"}],staticClass:"login-txt",attrs:{placeholder:"用户名",eventid:"abb6ec54-0"},domProps:{value:t.name},on:{input:function(e){e.target.composing||(t.name=e.target.value)}}})],1),n("view",{staticClass:"login-xy"},[n("uni-icon",{attrs:{type:"locked",size:"28",color:"black",mpcomid:"abb6ec54-1"}}),n("input",{directives:[{name:"model",rawName:"v-model",value:t.pwd,expression:"pwd"}],staticClass:"login-txt",staticStyle:{"letter-spacing":"15px"},attrs:{placeholder:"密码",password:"",eventid:"abb6ec54-1"},domProps:{value:t.pwd},on:{click:function(e){t.show=!0},input:function(e){e.target.composing||(t.pwd=e.target.value)}}})],1),n("button",{staticClass:"button",attrs:{eventid:"abb6ec54-2"},on:{tap:function(e){t.goLogin()}}},[t._v("登录")]),n("view",{staticClass:"forgot-psd"},[n("text",{attrs:{eventid:"abb6ec54-3"},on:{click:function(e){t.test()}}},[t._v("忘记密码")]),n("text",{staticClass:"forgot-psd-spacing"},[t._v("|")]),n("text",{attrs:{eventid:"abb6ec54-4"},on:{click:function(e){t.register()}}},[t._v("注册账号")])]),n("view",{staticClass:"bottom"},[n("view",[t._v("第三方登录")]),n("view",{staticClass:"login-icon"},[n("uni-icon",{attrs:{type:"weibo",size:"20",color:"black",mpcomid:"abb6ec54-2"}}),n("uni-icon",{attrs:{type:"weixin",size:"20",color:"black",mpcomid:"abb6ec54-3"}}),n("uni-icon",{attrs:{type:"qq",size:"20",color:"black",mpcomid:"abb6ec54-4"}})],1)])],1)])},o=[];n.d(e,"a",function(){return i}),n.d(e,"b",function(){return o})},be9d:function(t,e,n){"use strict";n.r(e);var i=n("d705"),o=n.n(i);for(var a in i)"default"!==a&&function(t){n.d(e,t,function(){return i[t]})}(a);e["default"]=o.a},d705:function(t,e,n){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var i=o(n("3d4c"));function o(t){return t&&t.__esModule?t:{default:t}}var a={data:function(){return{name:"",pwd:"",show:!0}},components:{uniIcon:i.default},methods:{login:function(){t.navigateTo({url:"../index/index"})},test:function(){t.navigateTo({url:"../index/index"})},register:function(){t.navigateTo({url:"../register/register"})},goLogin:function(){this.name.length<=0?t.showToast({icon:"none",title:"请输入用户名"}):this.pwd.length<=0?t.showToast({icon:"none",title:"请输入密码"}):t.request({url:"http://yijint.top:8089/login",method:"POST",data:{userName:this.name,password:this.pwd},success:function(e){console.log(e.data),t.showToast({icon:"none",title:"登录成功"})},fail:function(){t.hideLoading(),console.log("请求失败")},complete:function(){}})},gettest:function(){t.navigateTo({url:"../222/222"})},WX_MP_getuserinfo:function(e){t.login({provider:"weixin",success:function(e){t.getUserInfo({success:function(e){var n=e.userInfo,i=n.nickName,o=n.avatarUrl;t.setStorageSync("wxname",i),t.setStorageSync("wximg",o)}}),t.navigateTo({url:"../register/register"})},fail:function(){}})}},onLoad:function(){},beforeUpdate:function(){}};e.default=a}).call(this,n("649d")["default"])},f48b:function(t,e,n){"use strict";var i=n("fc5c"),o=n.n(i);o.a},fc5c:function(t,e,n){}},[["215a","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/login/login"],{"1f51":function(t,e,n){"use strict";n.r(e);var o=n("5e0d"),i=n("be9d");for(var a in i)"default"!==a&&function(t){n.d(e,t,function(){return i[t]})}(a);n("f48b");var c=n("2877"),s=Object(c["a"])(i["default"],o["a"],o["b"],!1,null,null,null);e["default"]=s.exports},"215a":function(t,e,n){"use strict";n("fcac");var o=a(n("b0ce")),i=a(n("1f51"));function a(t){return t&&t.__esModule?t:{default:t}}Page((0,o.default)(i.default))},"5e0d":function(t,e,n){"use strict";var o=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("view",[t.show?n("image",{staticClass:"logo",attrs:{src:"../../static/logo.png"}}):t._e(),t.show?t._e():n("image",{staticClass:"logo",attrs:{src:"../../static/shuijiao.jpg"}}),n("view",{staticClass:"login"},[n("view",{staticClass:"login-xy"},[n("uni-icon",{attrs:{type:"person-filled",size:"30",color:"black",mpcomid:"abb6ec54-0"}}),n("input",{directives:[{name:"model",rawName:"v-model",value:t.name,expression:"name"}],staticClass:"login-txt",attrs:{placeholder:"用户S名",eventid:"abb6ec54-0"},domProps:{value:t.name},on:{click:function(e){t.show=!1},input:function(e){e.target.composing||(t.name=e.target.value)}}})],1),n("view",{staticClass:"login-xy"},[n("uni-icon",{attrs:{type:"locked",size:"28",color:"black",mpcomid:"abb6ec54-1"}}),n("input",{directives:[{name:"model",rawName:"v-model",value:t.pwd,expression:"pwd"}],staticClass:"login-txt",staticStyle:{"letter-spacing":"15px"},attrs:{placeholder:"密码",password:"",eventid:"abb6ec54-1"},domProps:{value:t.pwd},on:{click:function(e){t.show=!0},input:function(e){e.target.composing||(t.pwd=e.target.value)}}})],1),n("button",{staticClass:"button",attrs:{eventid:"abb6ec54-2"},on:{tap:function(e){t.goLogin()}}},[t._v("登录")]),n("view",{staticClass:"forgot-psd"},[n("text",{attrs:{eventid:"abb6ec54-3"},on:{click:function(e){t.test()}}},[t._v("忘记密码")]),n("text",{staticClass:"forgot-psd-spacing"},[t._v("|")]),n("text",{attrs:{eventid:"abb6ec54-4"},on:{click:function(e){t.register()}}},[t._v("注册账号")])]),n("view",{staticClass:"bottom"},[n("view",[t._v("第三方登录")]),n("view",{staticClass:"login-icon"},[n("uni-icon",{attrs:{type:"weibo",size:"20",color:"black",eventid:"abb6ec54-5",mpcomid:"abb6ec54-2"},on:{click:function(e){t.test()}}}),n("uni-icon",{attrs:{type:"weixin",size:"20",color:"black",eventid:"abb6ec54-6",mpcomid:"abb6ec54-3"},on:{click:function(e){t.WX_MP_getuserinfo()}}}),n("uni-icon",{attrs:{type:"qq",size:"20",color:"black",mpcomid:"abb6ec54-4"}})],1)])],1)])},i=[];n.d(e,"a",function(){return o}),n.d(e,"b",function(){return i})},be9d:function(t,e,n){"use strict";n.r(e);var o=n("d705"),i=n.n(o);for(var a in o)"default"!==a&&function(t){n.d(e,t,function(){return o[t]})}(a);e["default"]=i.a},d705:function(t,e,n){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var o=i(n("3d4c"));function i(t){return t&&t.__esModule?t:{default:t}}var a={data:function(){return{name:"",pwd:"",show:!0}},components:{uniIcon:o.default},methods:{login:function(){t.navigateTo({url:"../index/index"})},test:function(){t.request({url:"http://yijint.top:8089/login",method:"POST",data:{username:"测试1",password:"123456"},success:function(t){console.log(t.data)},fail:function(){console.log("请求失败")}})},register:function(){t.navigateTo({url:"../register/register"})},goLogin:function(){this.name.length<=0?t.showToast({icon:"none",title:"请输入用户名"}):this.pwd.length<=0?t.showToast({icon:"none",title:"请输入密码"}):t.request({url:"http://yijint.top:8089/login",method:"POST",data:{username:this.name,password:this.pwd},success:function(e){console.log(e.data);var n=e.data.code;if(1==n){var o=e.data.data.username;t.setStorageSync("name",o),t.navigateTo({url:"../index/index"})}else t.showModal({content:"用户名或密码错误",confirmText:"确定",cancelText:"取消"})},fail:function(){t.hideLoading(),console.log("请求失败"),t.showToast({icon:"none",title:"请求失败"})},complete:function(){}})},gettest:function(){t.navigateTo({url:"../222/222"})},WX_MP_getuserinfo:function(e){t.login({provider:"weixin",success:function(e){t.getUserInfo({success:function(e){var n=e.userInfo,o=n.nickName,i=n.avatarUrl;t.setStorageSync("name",o),t.setStorageSync("wximg",i)}}),t.navigateTo({url:"../index/index"})},fail:function(){}})}},onLoad:function(){console.log(this.code)},beforeUpdate:function(){}};e.default=a}).call(this,n("649d")["default"])},f48b:function(t,e,n){"use strict";var o=n("fc5c"),i=n.n(o);i.a},fc5c:function(t,e,n){}},[["215a","common/runtime","common/vendor"]]]);
 });
 require('pages/login/login.js');
 __wxRoute = 'pages/index/index';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/index/index.js';
 
 define('pages/index/index.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/index/index"],{4465:function(t,n,e){"use strict";var u=function(){var t=this,n=t.$createElement,e=t._self._c||n;return e("view",{staticStyle:{width:"100%",background:"#0000FF"}},[e("web-view",{attrs:{src:"../../hybrid/html/paly.html",mpcomid:"a8a2ec30-0"}})],1)},a=[];e.d(n,"a",function(){return u}),e.d(n,"b",function(){return a})},"59a4":function(t,n,e){"use strict";e("fcac");var u=r(e("b0ce")),a=r(e("7a5d"));function r(t){return t&&t.__esModule?t:{default:t}}Page((0,u.default)(a.default))},"7a5d":function(t,n,e){"use strict";e.r(n);var u=e("4465"),a=e("8cc4");for(var r in a)"default"!==r&&function(t){e.d(n,t,function(){return a[t]})}(r);var c=e("2877"),o=Object(c["a"])(a["default"],u["a"],u["b"],!1,null,null,null);n["default"]=o.exports},8052:function(t,n,e){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var u={data:function(){return{}},components:{},onLoad:function(){},methods:{}};n.default=u},"8cc4":function(t,n,e){"use strict";e.r(n);var u=e("8052"),a=e.n(u);for(var r in u)"default"!==r&&function(t){e.d(n,t,function(){return u[t]})}(r);n["default"]=a.a}},[["59a4","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/index/index"],{"41e2":function(n,t,e){"use strict";var u=function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("view",[e("text",[n._v(n._s(n.name))]),n._v("登录成功")])},a=[];e.d(t,"a",function(){return u}),e.d(t,"b",function(){return a})},"59a4":function(n,t,e){"use strict";e("fcac");var u=c(e("b0ce")),a=c(e("7a5d"));function c(n){return n&&n.__esModule?n:{default:n}}Page((0,u.default)(a.default))},"7a5d":function(n,t,e){"use strict";e.r(t);var u=e("41e2"),a=e("8cc4");for(var c in a)"default"!==c&&function(n){e.d(t,n,function(){return a[n]})}(c);var o=e("2877"),r=Object(o["a"])(a["default"],u["a"],u["b"],!1,null,null,null);t["default"]=r.exports},8052:function(n,t,e){"use strict";(function(n){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var e={data:function(){return{name:n.getStorageSync("name"),img:"../../static/logo.png"}},components:{},onLoad:function(){},methods:{}};t.default=e}).call(this,e("649d")["default"])},"8cc4":function(n,t,e){"use strict";e.r(t);var u=e("8052"),a=e.n(u);for(var c in u)"default"!==c&&function(n){e.d(t,n,function(){return u[n]})}(c);t["default"]=a.a}},[["59a4","common/runtime","common/vendor"]]]);
 });
 require('pages/index/index.js');
 __wxRoute = 'pages/register/register';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/register/register.js';
 
 define('pages/register/register.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/register/register"],{"05c2":function(e,t,s){"use strict";(function(e){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var r=i(s("3d4c"));function i(e){return e&&e.__esModule?e:{default:e}}var a={data:function(){return{array:["学生","老师","管理员","角色x"],index:0,registerPhone:"",registerName:"",registerPassword:"",confirmPassword:"",registerCode:"",registerRole:"",smsbtn:{text:"发送",status:!1,codeTime:60},timerId:null,message:""}},components:{uniIcon:r.default},onLoad:function(){},methods:{bindPickerChange:function(e){console.log("picker发送选择改变，携带值为："+e.target.value),this.index=e.target.value},getsmscode:function(){var e=this;if(60==this.smsbtn.codeTime)return this.timerId=setInterval(function(){var t=e.smsbtn.codeTime;t--,e.smsbtn.codeTime=t,e.smsbtn.text=t+"S",t<1&&(clearInterval(e.timerId),e.smsbtn.text="重试",e.smsbtn.codeTime=60,e.smsbtn.status=!1)},1e3),!1},goRegister:function(){var t=this,s=this.registerPhone,r=this.registerName,i=this.registerPassword,a=this.confirmPassword,n=this.registerCode;this.registerRole;if(!/^1(3|4|5|6|7|8|9)\d{9}$/.test(s))return this.message="手机号码有误，请重填",!1;if(n<1e5)return this.message="验证码不符合格式",!1;if(!r)return this.message="用户名为空",!1;if(!i)return this.message="密码为空",!1;var o=0;return i.match(/([a-z])+/)&&o++,i.match(/([0-9])+/)&&o++,i.match(/([A-Z])+/)&&o++,i.match(/[^a-zA-Z0-9]+/)&&o++,i.length<8&&(o=0),o<2?(this.message="密码强度不够，至少8位，大写、小写、字母、符号 其中两种",!1):a!=i?(this.message="两次密码不同",!1):void e.request({url:"http://yijint.top:8089/register",method:"POST",data:{phnoe:this.registerPhone,password:this.registerPassword,username:this.registerName,rolename:this.registerRole},success:function(t){console.log(t),console.log(thi.index),e.redirectTo({url:"../login/login"})},fail:function(){e.hideLoading(),t.message="网络连接失败"},complete:function(){}})},openAgreement:function(){e.navigateTo({url:"../../store/new_file.html",success:function(e){},fail:function(){},complete:function(){}})}}};t.default=a}).call(this,s("649d")["default"])},"1e18":function(e,t,s){"use strict";s.r(t);var r=s("5f33"),i=s("280a");for(var a in i)"default"!==a&&function(e){s.d(t,e,function(){return i[e]})}(a);s("2801");var n=s("2877"),o=Object(n["a"])(i["default"],r["a"],r["b"],!1,null,null,null);t["default"]=o.exports},2801:function(e,t,s){"use strict";var r=s("5186"),i=s.n(r);i.a},"280a":function(e,t,s){"use strict";s.r(t);var r=s("05c2"),i=s.n(r);for(var a in r)"default"!==a&&function(e){s.d(t,e,function(){return r[e]})}(a);t["default"]=i.a},"4e01":function(e,t,s){"use strict";s("fcac");var r=a(s("b0ce")),i=a(s("1e18"));function a(e){return e&&e.__esModule?e:{default:e}}Page((0,r.default)(i.default))},5186:function(e,t,s){},"5f33":function(e,t,s){"use strict";var r=function(){var e=this,t=e.$createElement,s=e._self._c||t;return s("view",[s("view",{staticClass:"inputArea"},[s("view",{staticClass:"registerRole"},[s("text",{staticStyle:{"margin-right":"20rpx"}},[e._v("选择注册的角色")]),s("picker",{attrs:{value:e.index,range:e.array,eventid:"cd81f23c-1"},on:{change:e.bindPickerChange}},[s("text",{attrs:{eventid:"cd81f23c-0"},model:{value:e.registerRole,callback:function(t){e.registerRole=t},expression:"registerRole"}},[e._v(e._s(e.array[e.index]))])])],1)]),s("view",{staticClass:"inputArea"},[s("input",{directives:[{name:"model",rawName:"v-model",value:e.registerPhone,expression:"registerPhone"}],staticClass:"inputClass",attrs:{placeholder:"请输入手机号(国内)",type:"number",maxlength:"11",eventid:"cd81f23c-2"},domProps:{value:e.registerPhone},on:{input:function(t){t.target.composing||(e.registerPhone=t.target.value)}}})]),s("view",{staticClass:"inputArea"},[s("view",{staticStyle:{display:"flex"}},[s("input",{directives:[{name:"model",rawName:"v-model",value:e.registerCode,expression:"registerCode"}],staticClass:"inputClass",staticStyle:{flex:"4","border-radius":"22px 0 0 22px"},attrs:{type:"number",maxlength:"6",placeholder:"短信验证码",eventid:"cd81f23c-3"},domProps:{value:e.registerCode},on:{input:function(t){t.target.composing||(e.registerCode=t.target.value)}}}),s("view",{staticClass:"inputClass getCAPTCHA",attrs:{eventid:"cd81f23c-4"},on:{click:e.getsmscode}},[e._v(e._s(e.smsbtn.text))])])]),s("view",{staticClass:"inputArea"},[s("input",{directives:[{name:"model",rawName:"v-model",value:e.registerName,expression:"registerName"}],staticClass:"inputClass",attrs:{placeholder:"输入用户名",type:"text",eventid:"cd81f23c-5"},domProps:{value:e.registerName},on:{input:function(t){t.target.composing||(e.registerName=t.target.value)}}})]),s("view",{staticClass:"inputArea"},[s("input",{directives:[{name:"model",rawName:"v-model",value:e.registerPassword,expression:"registerPassword"}],staticClass:"inputClass",attrs:{placeholder:"密码(至少符号数字大小写两种)",type:"password",eventid:"cd81f23c-6"},domProps:{value:e.registerPassword},on:{input:function(t){t.target.composing||(e.registerPassword=t.target.value)}}})]),s("view",{staticClass:"inputArea"},[s("input",{directives:[{name:"model",rawName:"v-model",value:e.confirmPassword,expression:"confirmPassword"}],staticClass:"inputClass",attrs:{placeholder:"确认登录密码",type:"password",eventid:"cd81f23c-7"},domProps:{value:e.confirmPassword},on:{input:function(t){t.target.composing||(e.confirmPassword=t.target.value)}}})]),s("view",{staticStyle:{padding:"0 10%"}},[s("text",{staticStyle:{color:"red"}},[e._v(e._s(e.message))])]),s("view",{staticClass:"inputArea"},[s("button",{staticStyle:{"border-radius":"22px"},attrs:{type:"primary",eventid:"cd81f23c-8"},on:{click:e.goRegister}},[e._v("注 册")])],1),s("view",{staticClass:"inputArea"},[s("text",{staticStyle:{float:"right",color:"blue"},attrs:{eventid:"cd81f23c-9"},on:{click:e.openAgreement}},[e._v("《用户协议》")])])])},i=[];s.d(t,"a",function(){return r}),s.d(t,"b",function(){return i})}},[["4e01","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/register/register"],{"05c2":function(e,t,s){"use strict";(function(e){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var i=r(s("3d4c"));function r(e){return e&&e.__esModule?e:{default:e}}var a={data:function(){return{array:["学生","老师","管理员","角色x"],index:0,registerName:"",registerPassword:"",confirmPassword:"",registerRole:"学生",registerEmail:"",smsbtn:{text:"发送",status:!1,codeTime:60},timerId:null,message:""}},components:{uniIcon:i.default},onLoad:function(){},methods:{bindPickerChange:function(e){console.log("picker发送选择改变，携带值为："+e.target.value),this.index=e.target.value,1==e.target.value&&(this.registerRole="老师",console.log(this.registerRole)),2==e.target.value&&(this.registerRole="管理员",console.log(this.registerRole))},getsmscode:function(){var e=this;if(60==this.smsbtn.codeTime)return this.timerId=setInterval(function(){var t=e.smsbtn.codeTime;t--,e.smsbtn.codeTime=t,e.smsbtn.text=t+"S",t<1&&(clearInterval(e.timerId),e.smsbtn.text="重试",e.smsbtn.codeTime=60,e.smsbtn.status=!1)},1e3),!1},goRegister:function(){var t=this,s=this.registerName,i=this.registerPassword,r=this.confirmPassword,a=(this.registerRole,this.registerEmail);if(!s)return this.message="用户名为空",!1;if(!i)return this.message="密码为空",!1;var n=0;if(i.match(/([a-z])+/)&&n++,i.match(/([0-9])+/)&&n++,i.match(/([A-Z])+/)&&n++,i.match(/[^a-zA-Z0-9]+/)&&n++,i.length<8&&(n=0),n<2)return this.message="密码强度不够，至少8位，大写、小写、字母、符号 其中两种",!1;if(r!=i)return this.message="两次密码不同",!1;if(null==a||a.length<2)return this.message="邮箱格式不正确，请重新输入！",!1;var o=a.indexOf("@",1);return o<0?(this.message="邮箱格式不正确，请重新输入！",!1):a.indexOf(".",o+2)<0?(this.message="邮箱格式不正确，请重新输入！",!1):a.indexOf(".")==a.length-1?(this.message="邮箱格式不正确，请重新输入！",!1):void e.request({url:"http://yijint.top:8089/register",method:"POST",data:{username:this.registerName,password:this.registerPassword,email:this.registerEmail,rolename:this.registerRole},success:function(t){console.log(t),e.showModal({content:"注册成功",confirmText:"确定",cancelText:"",success:function(t){t.confirm&&e.redirectTo({url:"../login/login"})}})},fail:function(){e.hideLoading(),t.message="网络连接失败"},complete:function(){}})},openAgreement:function(){e.navigateTo({url:"../../store/new_file.html",success:function(e){},fail:function(){},complete:function(){}})}}};t.default=a}).call(this,s("649d")["default"])},"1e18":function(e,t,s){"use strict";s.r(t);var i=s("d663"),r=s("280a");for(var a in r)"default"!==a&&function(e){s.d(t,e,function(){return r[e]})}(a);s("2801");var n=s("2877"),o=Object(n["a"])(r["default"],i["a"],i["b"],!1,null,null,null);t["default"]=o.exports},2801:function(e,t,s){"use strict";var i=s("5186"),r=s.n(i);r.a},"280a":function(e,t,s){"use strict";s.r(t);var i=s("05c2"),r=s.n(i);for(var a in i)"default"!==a&&function(e){s.d(t,e,function(){return i[e]})}(a);t["default"]=r.a},"4e01":function(e,t,s){"use strict";s("fcac");var i=a(s("b0ce")),r=a(s("1e18"));function a(e){return e&&e.__esModule?e:{default:e}}Page((0,i.default)(r.default))},5186:function(e,t,s){},d663:function(e,t,s){"use strict";var i=function(){var e=this,t=e.$createElement,s=e._self._c||t;return s("view",[s("view",{staticClass:"inputArea"},[s("view",{staticClass:"registerRole"},[s("text",{staticStyle:{"margin-right":"20rpx"}},[e._v("选择注册的角色")]),s("picker",{attrs:{value:e.index,range:e.array,eventid:"cd81f23c-1"},on:{change:e.bindPickerChange}},[s("text",{attrs:{eventid:"cd81f23c-0"},model:{value:e.registerRole,callback:function(t){e.registerRole=t},expression:"registerRole"}},[e._v(e._s(e.array[e.index]))])])],1)]),s("view",{staticClass:"inputArea"},[s("input",{directives:[{name:"model",rawName:"v-model",value:e.registerName,expression:"registerName"}],staticClass:"inputClass",attrs:{placeholder:"输入用户名",type:"text",eventid:"cd81f23c-2"},domProps:{value:e.registerName},on:{input:function(t){t.target.composing||(e.registerName=t.target.value)}}})]),s("view",{staticClass:"inputArea"},[s("input",{directives:[{name:"model",rawName:"v-model",value:e.registerPassword,expression:"registerPassword"}],staticClass:"inputClass",attrs:{placeholder:"密码(至少符号数字大小写两种)",type:"password",eventid:"cd81f23c-3"},domProps:{value:e.registerPassword},on:{input:function(t){t.target.composing||(e.registerPassword=t.target.value)}}})]),s("view",{staticClass:"inputArea"},[s("input",{directives:[{name:"model",rawName:"v-model",value:e.confirmPassword,expression:"confirmPassword"}],staticClass:"inputClass",attrs:{placeholder:"确认登录密码",type:"password",eventid:"cd81f23c-4"},domProps:{value:e.confirmPassword},on:{input:function(t){t.target.composing||(e.confirmPassword=t.target.value)}}})]),s("view",{staticClass:"inputArea"},[s("input",{directives:[{name:"model",rawName:"v-model",value:e.registerEmail,expression:"registerEmail"}],staticClass:"inputClass",attrs:{placeholder:"电子邮件",type:"text",eventid:"cd81f23c-5"},domProps:{value:e.registerEmail},on:{input:function(t){t.target.composing||(e.registerEmail=t.target.value)}}})]),s("view",{staticStyle:{padding:"0 10%"}},[s("text",{staticStyle:{color:"red"}},[e._v(e._s(e.message))])]),s("view",{staticClass:"inputArea"},[s("button",{staticStyle:{"border-radius":"22px"},attrs:{type:"primary",eventid:"cd81f23c-6"},on:{click:e.goRegister}},[e._v("注 册")])],1),s("view",{staticClass:"inputArea"},[s("text",{staticStyle:{float:"right",color:"blue"},attrs:{eventid:"cd81f23c-7"},on:{click:e.openAgreement}},[e._v("《用户协议》")])])])},r=[];s.d(t,"a",function(){return i}),s.d(t,"b",function(){return r})}},[["4e01","common/runtime","common/vendor"]]]);
 });
 require('pages/register/register.js');
-__wxRoute = 'pages/web-view/web-view';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/web-view/web-view.js';
-
-define('pages/web-view/web-view.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/web-view/web-view"],{"1d69":function(t,e,n){"use strict";n.r(e);var u=n("500b"),r=n.n(u);for(var a in u)"default"!==a&&function(t){n.d(e,t,function(){return u[t]})}(a);e["default"]=r.a},"24b1":function(t,e,n){"use strict";n("fcac");var u=a(n("b0ce")),r=a(n("9097"));function a(t){return t&&t.__esModule?t:{default:t}}Page((0,u.default)(r.default))},"500b":function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var u={methods:{}};e.default=u},9097:function(t,e,n){"use strict";n.r(e);var u=n("b578"),r=n("1d69");for(var a in r)"default"!==a&&function(t){n.d(e,t,function(){return r[t]})}(a);var c=n("2877"),o=Object(c["a"])(r["default"],u["a"],u["b"],!1,null,null,null);e["default"]=o.exports},b578:function(t,e,n){"use strict";var u=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("view",[n("web-view",{attrs:{src:"../../hybrid/html/tt.html",mpcomid:"9998e57c-0"}})],1)},r=[];n.d(e,"a",function(){return u}),n.d(e,"b",function(){return r})}},[["24b1","common/runtime","common/vendor"]]]);
-});
-require('pages/web-view/web-view.js');
 

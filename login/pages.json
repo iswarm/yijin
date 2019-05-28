@@ -4,7 +4,7 @@
        {
            "path" : "pages/login/login",
            "style" : {
-               "navigationBarTitleText" : "登录啊",
+               "navigationBarTitleText" : "登录",
                "backgroundColor" : "#4CD964"
            }
        },
@@ -20,10 +20,6 @@
             "style" : {
                 "navigationBarTitleText" : "注册"
             }
-        },
-        {
-            "path" : "pages/web-view/web-view",
-            "style" : {}
         }
     ],
     "globalStyle" : {

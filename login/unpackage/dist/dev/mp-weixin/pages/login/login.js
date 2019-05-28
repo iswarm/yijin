@@ -63,8 +63,19 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
 
     },
     test: function test() {//登录
-      uni.navigateTo({
-        url: '../index/index' });
+      uni.request({
+        url: 'http://yijint.top:8089/login',
+        method: 'POST', //get或post
+        data: { //请求的参数
+          username: '测试1',
+          password: '123456' },
+
+        success: function success(res) {
+          console.log(res.data);
+        },
+        fail: function fail() {
+          console.log('请求失败');
+        } });
 
     },
     register: function register() {//注册
@@ -97,10 +108,22 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
         success: function success(res) {
           //console.log(this.name)
           console.log(res.data);
-          uni.showToast({ //交互反馈接口，显示消息提示框。
-            icon: 'none',
-            title: '登录成功' });
+          var code = res.data.code;
+          if (code == 1) {
+            var name = res.data.data.username;
+            uni.setStorageSync('name', name);
+            uni.navigateTo({
+              url: '../index/index' });
 
+          } else
+          {
+            uni.showModal({
+              content: "用户名或密码错误",
+              confirmText: "确定",
+              cancelText: "取消" });
+
+          }
+          //uni.setStorageSync('name', this.name)//缓存	
         },
         fail: function fail() {
           uni.hideLoading(); //隐藏 loading 提示框。
@@ -130,13 +153,13 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
               var userInfo = res.userInfo;
               var nickName = userInfo.nickName; //读取头像
               var avatarUrl = userInfo.avatarUrl;
-              uni.setStorageSync('wxname', nickName); //缓存
+              uni.setStorageSync('name', nickName); //缓存
               uni.setStorageSync('wximg', avatarUrl);
 
             } });
 
           uni.navigateTo({ //登录成功页面跳转
-            url: '../register/register' });
+            url: '../index/index' });
 
         },
         fail: function fail() {
@@ -145,6 +168,7 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
     } },
 
   onLoad: function onLoad() {//第一次加载
+    console.log(this.code);
   },
   beforeUpdate: function beforeUpdate() {//数据更新时调用此生命周期函数
 
@@ -218,9 +242,12 @@ var render = function() {
                 }
               ],
               staticClass: "login-txt",
-              attrs: { placeholder: "用户名", eventid: "abb6ec54-0" },
+              attrs: { placeholder: "用户S名", eventid: "abb6ec54-0" },
               domProps: { value: _vm.name },
               on: {
+                click: function($event) {
+                  _vm.show = false
+                },
                 input: function($event) {
                   if ($event.target.composing) {
                     return
@@ -300,7 +327,7 @@ var render = function() {
                 }
               }
             },
-            [_vm._v("忘记密码了")]
+            [_vm._v("忘记密码")]
           ),
           _c("text", { staticClass: "forgot-psd-spacing" }, [_vm._v("|")]),
           _c(
@@ -327,7 +354,13 @@ var render = function() {
                   type: "weibo",
                   size: "20",
                   color: "black",
+                  eventid: "abb6ec54-5",
                   mpcomid: "abb6ec54-2"
+                },
+                on: {
+                  click: function($event) {
+                    _vm.test()
+                  }
                 }
               }),
               _c("uni-icon", {
@@ -335,7 +368,13 @@ var render = function() {
                   type: "weixin",
                   size: "20",
                   color: "black",
+                  eventid: "abb6ec54-6",
                   mpcomid: "abb6ec54-3"
+                },
+                on: {
+                  click: function($event) {
+                    _vm.WX_MP_getuserinfo()
+                  }
                 }
               }),
               _c("uni-icon", {

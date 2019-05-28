@@ -122,14 +122,15 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
       var confirmPassword = this.confirmPassword;
       //let registerCode = this.registerCode;
       var registerRole = this.registerRole;
+      var registerEmail = this.registerEmail;
       /* if (!(/^1(3|4|5|6|7|8|9)\d{9}$/.test(registerPhone))) {
-                                            	this.message = "手机号码有误，请重填";
-                                            	return false;
-                                            }
-                                            if (registerCode < 100000) {
-                                            	this.message = "验证码不符合格式";
-                                            	return false;
-                                            } */
+                                              	this.message = "手机号码有误，请重填";
+                                              	return false;
+                                              }
+                                              if (registerCode < 100000) {
+                                              	this.message = "验证码不符合格式";
+                                              	return false;
+                                              } */
       if (!registerName) {
         this.message = "用户名为空";
         return false;
@@ -138,30 +139,55 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
         this.message = "密码为空";
         return false;
       }
-      /* let ls = 0;
-        if (registerPassword.match(/([a-z])+/)) {
-        	ls++;
-        }
-        if (registerPassword.match(/([0-9])+/)) {
-        	ls++;
-        }
-        if (registerPassword.match(/([A-Z])+/)) {
-        	ls++;
-        }
-        if (registerPassword.match(/[^a-zA-Z0-9]+/)) {
-        	ls++;
-        }
-        if (registerPassword.length < 8) {
-        	ls = 0;
-        }
-        if (ls < 2) {
-        	this.message = "密码强度不够，至少8位，大写、小写、字母、符号 其中两种";
-        	return false;
-        } */
+
+      //密码格式验证
+      var ls = 0;
+      if (registerPassword.match(/([a-z])+/)) {
+        ls++;
+      }
+      if (registerPassword.match(/([0-9])+/)) {
+        ls++;
+      }
+      if (registerPassword.match(/([A-Z])+/)) {
+        ls++;
+      }
+      if (registerPassword.match(/[^a-zA-Z0-9]+/)) {
+        ls++;
+      }
+      if (registerPassword.length < 8) {
+        ls = 0;
+      }
+      if (ls < 2) {
+        this.message = "密码强度不够，至少8位，大写、小写、字母、符号 其中两种";
+        return false;
+      }
       if (confirmPassword != registerPassword) {
         this.message = "两次密码不同";
         return false;
       }
+
+      //邮箱格式验证
+      if (registerEmail == null || registerEmail.length < 2) {
+        this.message = '邮箱格式不正确，请重新输入！';
+        return false;
+      }
+      //需要出现'@',且不是首字符.
+      var aPos = registerEmail.indexOf("@", 1);
+      if (aPos < 0) {
+        this.message = '邮箱格式不正确，请重新输入！';
+        return false;
+      }
+      // '@'后出现'.',且不紧跟其后.
+      if (registerEmail.indexOf(".", aPos + 2) < 0) {
+        this.message = '邮箱格式不正确，请重新输入！';
+        return false;
+      }
+      //判断'.'是否为最后一个字符
+      if (registerEmail.indexOf('.') == registerEmail.length - 1) {
+        this.message = '邮箱格式不正确，请重新输入！';
+        return false;
+      }
+
       uni.request({
         url: 'http://yijint.top:8089/register',
         method: 'POST',
@@ -174,8 +200,17 @@ var _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/uni-i
 
         success: function success(res) {
           console.log(res);
-          uni.redirectTo({
-            url: '../login/login' });
+          uni.showModal({
+            content: "注册成功",
+            confirmText: "确定",
+            cancelText: "",
+            success: function success(res) {
+              if (res.confirm) {
+                uni.redirectTo({
+                  url: '../login/login' });
+
+              }
+            } });
 
         },
         fail: function fail() {

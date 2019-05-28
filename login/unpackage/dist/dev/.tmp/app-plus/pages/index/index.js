@@ -8,7 +8,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default =\n\n\n\n\n\n\n{\n  data: function data() {\n    return {};\n\n  },\n  components: {},\n\n\n  onLoad: function onLoad() {\n  },\n  methods: {} };exports.default = _default;\n\n//# sourceURL=uni-app:///pages/index/index.vue?vue&type=script&lang=js&?0107");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default =\n\n\n\n\n\n\n\n\n\n\n\n{\n  data: function data() {\n    return {\n      name: uni.getStorageSync('name'),\n      //uni.getStorageSync('storage_key')\n      img: '../../static/logo.png' };\n\n  },\n  components: {},\n\n\n  onLoad: function onLoad() {\n\n  },\n  methods: {} };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/index/index.vue?vue&type=script&lang=js&?0107");
 
 /***/ }),
 
@@ -20,7 +20,7 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.de
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticStyle: { width: \"100%\", background: \"#0000FF\" } },\n    [\n      _c(\"web-view\", {\n        attrs: { src: \"../../hybrid/html/paly.html\", mpcomid: \"a8a2ec30-0\" }\n      })\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/index/index.vue?vue&type=template&id=e6a5bcb4&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", [\n    _c(\"text\", [_vm._v(_vm._s(_vm.name))]),\n    _vm._v(\"登录成功\")\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=E:/%E7%BF%BC%E8%BF%9B/YiJin/pages/index/index.vue?vue&type=template&id=e6a5bcb4&");
 
 /***/ }),
 

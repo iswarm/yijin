@@ -47,6 +47,7 @@
 	color: #333333;
 	font-size: 35rpx;
 	border-left:2px solid #BDBDBD;
+	padding-left: 20rpx;
 }
 .forgot-psd{
 	color: black;
