@@ -41,17 +41,31 @@
 
 <script src="https://unpkg.com/ipfs/dist/index.js"></script>
 <script src="https://unpkg.com/ipfs-http-client/dist/index.min.js"></script>
+<!-- 试试hls播放是否能用 -->
+<script src="https://unpkg.com/hlsjs-ipfs-loader@0.1.3/dist/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <script>
     function cli(){
         document.getElementById("sppp").innerHTML = '正在加载 > > > ';
         var s = document.getElementById("ppp").value;
-    	const node = new window.Ipfs();
+    	const node = new window.Ipfs({repo: 'ipfs-'+Math.random() });
         node.on('ready', () => {
-                node.cat(s, function(err, res){
+                Hls.DefaultConfig.loader = HlsjsIpfsLoader;
+                Hls.DefaultConfig.debug = false;
+                if (Hls.isSupported()) {
+                   const video = document.getElementById('vide');
+                   const hls = new Hls();
+                   hls.config.ipfs = node;
+                   hls.config.ipfsHash = 'QmdpAidwAsBGptFB3b6A9Pyi5coEbgjHrL3K2Qrsutmj9K';
+                   hls.loadSource('master.m3u8');
+                   hls.attachMedia(video);
+                   hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+                }
+                /* node.cat(s, function(err, res){
                 	if(err)
                     	console.log(err);
                     document.getElementById('vide').src = res.toString();
-                });
+                }); */
         document.getElementById("sppp").innerHTML = '加载完毕,播放器正在加载';   
     });
     }
