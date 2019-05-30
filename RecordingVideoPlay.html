@@ -49,6 +49,7 @@
         document.getElementById("sppp").innerHTML = '正在加载 > > > ';
         var s = document.getElementById("ppp").value;
     	const node = new window.Ipfs({repo: 'ipfs-'+Math.random() });
+        //document.getElementById("sppp").innerHTML = '加载完毕,wowo播放器正在加载'; 
         node.on('ready', () => {
                 Hls.DefaultConfig.loader = HlsjsIpfsLoader;
                 Hls.DefaultConfig.debug = false;
@@ -57,6 +58,7 @@
                    const hls = new Hls();
                    hls.config.ipfs = node;
                    hls.config.ipfsHash = 'QmdpAidwAsBGptFB3b6A9Pyi5coEbgjHrL3K2Qrsutmj9K';
+                   document.getElementById("sppp").innerHTML = '加载完毕,wowo播放器正在加载'; 
                    hls.loadSource('master.m3u8');
                    hls.attachMedia(video);
                    hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
@@ -66,7 +68,7 @@
                     	console.log(err);
                     document.getElementById('vide').src = res.toString();
                 }); */
-        document.getElementById("sppp").innerHTML = '加载完毕,播放器正在加载';   
+        //document.getElementById("sppp").innerHTML = '加载完毕,播放器正在加载';   
     });
     }
 </script>
